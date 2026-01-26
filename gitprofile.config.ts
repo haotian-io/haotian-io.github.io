@@ -76,8 +76,7 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '+86-18116986081',
-    education email: 'liuhaotian@stu.xmu.edu.cn',
-    Primary email: 'haotianliu.me@gmail.com',
+    email: 'liuhaotian@stu.xmu.edu.cn',
     // Chinese platforms
     bilibili: 'https://space.bilibili.com/499812030',
     zhihu: 'https://www.zhihu.com/people/qing-xia-36-10',
