@@ -17,7 +17,7 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 6, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -52,7 +52,7 @@ const CONFIG = {
     // },
   },
   seo: {
-    title: 'Haotian Liu | LLM/MLLM/AI Research',
+    title: 'Haotian Liu | LLM/MLLM',
     description: 'Haotian Liu, undergraduate student at Xiamen University majoring in Software Engineering, focusing on LLM, MLLM, Role-Playing AI, and Embodied Intelligence. Research intern at H World Group.',
     imageURL: '',
   },
