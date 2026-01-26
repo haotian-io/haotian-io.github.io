@@ -51,63 +51,66 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: {
+    title: 'Haotian Liu | LLM/MLLM/AI Research',
+    description: 'Haotian Liu, undergraduate student at Xiamen University majoring in Software Engineering, focusing on LLM, MLLM, Role-Playing AI, and Embodied Intelligence. Research intern at H World Group.',
+    imageURL: '',
+  },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'haotian-liu-a92492347',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
-    instagram: '',
+    instagram: 'haotian_me',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '',
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '86+18116986081',
-    email: '',
+    website: '',
+    phone: '+86-18116986081',
+    education email: 'liuhaotian@stu.xmu.edu.cn',
+    Primary email: 'haotianliu.me@gmail.com',
+    // Chinese platforms
+    bilibili: 'https://space.bilibili.com/499812030',
+    zhihu: 'https://www.zhihu.com/people/qing-xia-36-10',
+    xiaohongshu: 'https://www.xiaohongshu.com/user/profile/5d1b50f50000000016027fc9',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
+    'Python',
+    'Java',
+    'JavaEE',
+    'Spring Boot',
+    'SQL',
+    'Data Analysis',
+    'Feature Engineering',
+    'Model Evaluation',
     'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Linux',
+    'VS Code',
+    'DevOps',
+    'Scrum',
+    'LLM/MLLM',
+    'PyTorch',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'H World Group',
+      position: 'Research Intern',
+      from: 'January 2026',
       to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.hworld.com',
     },
   ],
   certifications: [
@@ -120,36 +123,28 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Xiamen University (XMU)',
+      degree: 'Bachelor of Software Engineering',
+      from: '2023',
+      to: '2027',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
+      conferenceName: 'ICML 2026',
+      journalName: '',
+      authors: 'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
+      link: 'https://openreview.net/forum?id=32836',
+      description: 'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title: 'Long-Horizon Memory Governance for LLM Agents',
+      conferenceName: 'ICML 2026',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      authors: 'Boyang Wang, Yueling Liu, Yalun Wu, Haotian Liu, Xianjie Wu, Zhoujun Li',
+      link: 'https://openreview.net/forum?id=25959',
+      description: 'This paper proposes Long-Horizon Memory Governance (LHMG), a framework that augments LLM agents with principled memory management to address key failure modes in long-range reasoning. LHMG introduces conflict-aware revision graphs, strict No-Silent-Overwrite principles, and Risk-Gated Memory Conditioning mechanisms to ensure reliable long-term memory over extended interactions.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
@@ -164,7 +159,7 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'winter',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -229,3 +224,5 @@ const CONFIG = {
 };
 
 export default CONFIG;
+
+
