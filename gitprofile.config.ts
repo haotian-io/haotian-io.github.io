@@ -28,28 +28,28 @@ const CONFIG = {
         projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
-    external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
-    },
+    // external: {
+    //   header: 'My Projects',
+    //   // To hide the `External Projects` section, keep it empty.
+    //   projects: [
+    //     {
+    //       title: 'Project Name',
+    //       description:
+    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+    //       imageUrl:
+    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+    //       link: 'https://example.com',
+    //     },
+    //     {
+    //       title: 'Project Name',
+    //       description:
+    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+    //       imageUrl:
+    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+    //       link: 'https://example.com',
+    //     },
+    //   ],
+    // },
   },
   seo: {
     title: 'Haotian Liu | LLM/MLLM/AI Research',
@@ -84,7 +84,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://github.com/haotian-io/haotian-io.github.io/raw/main/LIUHAOTIAN_CV.pdf',
   },
   skills: [
     'Python',
@@ -112,14 +112,14 @@ const CONFIG = {
       companyLink: 'https://www.hworld.com',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  // certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   educations: [
     {
       institution: 'Xiamen University (XMU)',
@@ -130,14 +130,6 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
-      conferenceName: 'ICML 2026',
-      journalName: '',
-      authors: 'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
-      link: 'https://openreview.net/forum?id=32836',
-      description: 'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
-    },
-    {
       title: 'Long-Horizon Memory Governance for LLM Agents',
       conferenceName: 'ICML 2026',
       journalName: '',
@@ -145,15 +137,23 @@ const CONFIG = {
       link: 'https://openreview.net/forum?id=25959',
       description: 'This paper proposes Long-Horizon Memory Governance (LHMG), a framework that augments LLM agents with principled memory management to address key failure modes in long-range reasoning. LHMG introduces conflict-aware revision graphs, strict No-Silent-Overwrite principles, and Risk-Gated Memory Conditioning mechanisms to ensure reliable long-term memory over extended interactions.',
     },
+    {
+      title: 'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
+      conferenceName: 'ICML 2026',
+      journalName: '',
+      authors: 'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
+      link: 'https://openreview.net/forum?id=32836',
+      description: 'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
+    },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-PC0LEV8P2G', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
