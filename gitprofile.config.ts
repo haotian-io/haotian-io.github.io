@@ -29,27 +29,35 @@ const CONFIG = {
       },
     },
     // external: {
-    //   header: 'My Projects',
-    //   // To hide the `External Projects` section, keep it empty.
-    //   projects: [
-    //     {
-    //       title: 'Project Name',
-    //       description:
-    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    //       imageUrl:
-    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-    //       link: 'https://example.com',
-    //     },
-    //     {
-    //       title: 'Project Name',
-    //       description:
-    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    //       imageUrl:
-    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-    //       link: 'https://example.com',
-    //     },
-    //   ],
-    // },
+    external: {
+      header: 'My Projects',
+      projects: [
+        {
+          title: 'MLLM: Role-Playing Consistency Evaluation and Enhancement',
+          description:
+            'Built a 90-role bilingual benchmark with 100k+ instructions; surfaced a ~40% gap between open-source (LLaMA, ChatGLM) and GPT-5 on character knowledge; applied Context-Instruct tuning to cut persona OOC and lift CUS/style mimicry of 7B models by 10.4%; delivered automated+manual evaluation with >0.68 human correlation and solid OOD generalization.',
+          link: 'https://github.com/haotian-io',
+        },
+        {
+          title: 'MLLM: Clinical Reasoning for Brain Disease Detection',
+          description:
+            'Reproduced IntrA 3D point cloud and TOF-MRA diagnostics to ~70% accuracy; mapped 3D/imaging features into structured JSON and VLM reasoning to surface 5% occult rupture risks; validated weak-label schemes that doubled 3D aneurysm labeling efficiency with no detection drop.',
+          link: 'https://github.com/haotian-io',
+        },
+        {
+          title: 'AI4S: Agent-driven Peptide Functional Prediction',
+          description:
+            'Reproduced CPPpred-En to 97.27% accuracy (MCC 0.945) on CPP924, beating SiameseCPP; engineered an agent pipeline blending 69 physico-chemical features with 8 PLM embeddings and automated evaluation of 552 pairs via soft-voting ensemble; ablations+t-SNE showed a 2.19% gain from physico-chemical features.',
+          link: 'https://github.com/haotian-io',
+        },
+        {
+          title: 'Unity AI Interactive Picture Book',
+          description:
+            'Partnered with Xiaoqian Tech end-to-end; piloted at Yanwu Primary School and secured national software copyright; built a multi-agent UnityWebRequest system orchestrating 3 AIGC APIs (Tongyi, Baidu, etc.) for dynamic text, illustration, and music; drove requirements through OKRs and standardized rollout/rollback.',
+          link: 'https://github.com/haotian-io',
+        },
+      ],
+    },
   },
   seo: {
     title: 'Haotian Liu | LLM/MLLM',
