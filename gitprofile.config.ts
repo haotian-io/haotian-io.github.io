@@ -4,7 +4,6 @@ const CONFIG = {
   github: {
     username: 'haotian-io', // Your GitHub org/user name. (This is the only required config)
   },
-  customLocation: 'Shanghai, China', // Custom location override
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
@@ -114,7 +113,7 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'H World Group',
+      company: 'H World Group, Shanghai',
       position: 'Research Intern',
       from: 'January 2026',
       to: 'Present',
