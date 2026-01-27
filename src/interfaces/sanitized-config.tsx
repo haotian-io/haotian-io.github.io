@@ -139,6 +139,7 @@ export interface SanitizedConfig {
   hotjar: SanitizedHotjar;
   blog: SanitizedBlog;
   themeConfig: SanitizedThemeConfig;
+  customLocation?: string;
   footer?: string;
   enablePWA: boolean;
 }
