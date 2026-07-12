@@ -11,6 +11,9 @@ describe('academic pages', () => {
     expect(screen.getAllByTestId('selected-project')).toHaveLength(3);
     expect(container.querySelector('.hero-role')).not.toBeInTheDocument();
     expect(
+      screen.queryByText('Xiamen University · Software Engineering'),
+    ).not.toBeInTheDocument();
+    expect(
       screen.queryByRole('heading', { name: /skills|education/i }),
     ).not.toBeInTheDocument();
   });

@@ -9,7 +9,6 @@ export function HomePage({ content }: { content: SiteContent }) {
     <>
       <section className="hero" aria-labelledby="hero-title">
         <div>
-          <p className="eyebrow">Xiamen University · Software Engineering</p>
           <h1 id="hero-title">{content.identity.name}</h1>
           <ul className="interest-list" aria-label="Research interests">
             {content.identity.interests.map((interest) => (
