@@ -55,4 +55,8 @@ export default defineConfig({
   define: {
     CONFIG: CONFIG,
   },
+  test: {
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+  },
 });

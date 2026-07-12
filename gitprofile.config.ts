@@ -60,8 +60,9 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Haotian Liu | LLM/MLLM',
-    description: 'Haotian Liu, undergraduate student at Xiamen University majoring in Software Engineering, focusing on LLM, MLLM, Role-Playing AI, and Embodied Intelligence. Research intern at H World Group.',
+    title: 'Haotian Liu | AI Research',
+    description:
+      'Haotian Liu is a Software Engineering undergraduate at Xiamen University researching LLM agents, multimodal models, and AI for software engineering and HCI.',
     imageURL: '',
   },
   social: {
@@ -70,7 +71,7 @@ const CONFIG = {
     mastodon: '',
     researchGate: '',
     facebook: '',
-    instagram: 'haotian_me',
+    instagram: '',
     reddit: '',
     threads: '',
     youtube: '',
@@ -83,12 +84,8 @@ const CONFIG = {
     discord: '',
     telegram: '',
     website: '',
-    phone: '+86-18116986081',
-    email: 'liuhaotian@stu.xmu.edu.cn',
-    // Chinese platforms
-    bilibili: 'https://space.bilibili.com/499812030',
-    zhihu: 'https://www.zhihu.com/people/qing-xia-36-10',
-    xiaohongshu: 'https://www.xiaohongshu.com/user/profile/5d1b50f50000000016027fc9',
+    phone: '',
+    email: 'haotianliu.me@gmail.com',
   },
   resume: {
     fileUrl:
@@ -141,17 +138,22 @@ const CONFIG = {
       title: 'Long-Horizon Memory Governance for LLM Agents',
       conferenceName: 'ICML 2026',
       journalName: '',
-      authors: 'Boyang Wang, Yueling Liu, Yalun Wu, Haotian Liu, Xianjie Wu, Zhoujun Li',
+      authors:
+        'Boyang Wang, Yueling Liu, Yalun Wu, Haotian Liu, Xianjie Wu, Zhoujun Li',
       link: 'https://openreview.net/forum?id=25959',
-      description: 'This paper proposes Long-Horizon Memory Governance (LHMG), a framework that augments LLM agents with principled memory management to address key failure modes in long-range reasoning. LHMG introduces conflict-aware revision graphs, strict No-Silent-Overwrite principles, and Risk-Gated Memory Conditioning mechanisms to ensure reliable long-term memory over extended interactions.',
+      description:
+        'This paper proposes Long-Horizon Memory Governance (LHMG), a framework that augments LLM agents with principled memory management to address key failure modes in long-range reasoning. LHMG introduces conflict-aware revision graphs, strict No-Silent-Overwrite principles, and Risk-Gated Memory Conditioning mechanisms to ensure reliable long-term memory over extended interactions.',
     },
     {
-      title: 'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
+      title:
+        'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
       conferenceName: 'ICML 2026',
       journalName: '',
-      authors: 'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
+      authors:
+        'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
       link: 'https://openreview.net/forum?id=32836',
-      description: 'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
+      description:
+        'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
@@ -231,5 +233,3 @@ const CONFIG = {
 };
 
 export default CONFIG;
-
-

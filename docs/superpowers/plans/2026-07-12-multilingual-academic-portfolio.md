@@ -38,6 +38,7 @@
 ### Task 1: Locale and Content Foundation
 
 **Files:**
+
 - Create: `src/content/types.ts`
 - Create: `src/content/site-content.ts`
 - Create: `src/i18n/locale.tsx`
@@ -47,6 +48,7 @@
 - Modify: `vite.config.ts`
 
 **Interfaces:**
+
 - Produces: `Locale = 'en' | 'ja' | 'zh'`, `SITE_CONTENT: Record<Locale, SiteContent>`, `parseLocale(value): Locale`, `LocaleProvider`, and `useLocale()`.
 
 - [ ] Add Vitest, jsdom, and Testing Library dependencies plus `test` and `test:run` scripts.
@@ -59,12 +61,14 @@
 ### Task 2: Application Shell and Routing
 
 **Files:**
+
 - Create: `src/app.tsx`
 - Create: `src/app.test.tsx`
 - Create: `src/components/site-shell.tsx`
 - Modify: `src/main.tsx`
 
 **Interfaces:**
+
 - Consumes: `LocaleProvider`, `useLocale()`, and `SITE_CONTENT`.
 - Produces: `routeFromHash(hash): 'home' | 'projects'` and accessible global navigation.
 
@@ -77,11 +81,13 @@
 ### Task 3: Home and Projects Pages
 
 **Files:**
+
 - Create: `src/pages/home.tsx`
 - Create: `src/pages/projects.tsx`
 - Create: `src/pages/pages.test.tsx`
 
 **Interfaces:**
+
 - Consumes: localized `SiteContent` records.
 - Produces: `HomePage({ content })` and `ProjectsPage({ content })`.
 
@@ -94,12 +100,14 @@
 ### Task 4: Restrained Styling, CV, and Release Verification
 
 **Files:**
+
 - Modify: `src/assets/index.css`
 - Modify: `index.html`
 - Copy: `../output/pdf/CV_Haotian_Liu_202607_SGU.pdf` to `public/CV_Haotian_Liu_202607_SGU.pdf`
 - Remove from runtime: legacy theme and GitProfile composition imports no longer reached from `src/main.tsx`.
 
 **Interfaces:**
+
 - Consumes: semantic class names from the shell and pages.
 - Produces: responsive desktop/mobile layout and deployable production bundle.
 
