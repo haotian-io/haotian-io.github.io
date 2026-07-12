@@ -19,7 +19,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       role: 'Software Engineering undergraduate working on reliable, human-centered AI systems.',
       interests: ['LLM Agents', 'Multimodal LLMs', 'AI for SE & HCI'],
       about:
-        'I am a B.S. student at Xiamen University (2023–2027). My research focuses on evaluating and improving AI agents in safety-critical, long-horizon, and collaborative settings.',
+        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research focuses on evaluating and improving AI agents in safety-critical, long-horizon, and collaborative settings.',
     },
     labels: {
       publications: 'Publications',
@@ -52,8 +52,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'pilotbench',
         title: 'PilotBench',
         summary:
-          'A safety-constrained benchmark for general aviation agents built from real flight trajectories.',
-        result: '708 trajectories · 41 models · accepted at IJCNN 2026',
+          'Co-developed a safety-constrained benchmark from 708 real trajectories, 34-channel telemetry, and nine flight phases.',
+        result:
+          'Contributed to evaluations of 41 models and analyses of precision–controllability and dynamic complexity.',
         status: 'Completed',
         href: sharedProjects.links.pilotbench,
         selected: true,
@@ -62,8 +63,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'lhmg',
         title: 'Long-Horizon Memory Governance',
         summary:
-          'An auditable memory layer that prevents silent overwrite and unsafe conditioning in long-horizon agents.',
-        result: 'GPT-4o cross-turn decision consistency: +13.3 points',
+          'Developed a prototype memory-governance layer with append-only revisions, active-state semantics, risk gating, and governed forgetting.',
+        result:
+          'In controlled diagnostics, observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.',
         status: 'Under review',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -72,8 +74,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
         summary:
-          'A deployed procurement-search agent with entity extraction, hybrid retrieval, and profile-aware ranking.',
-        result: 'MRR 0.95 · NDCG@5 0.91 · first-hit CTR +6.2% / +9.8%',
+          'Contributed to a deployed procurement-search system using LLM entity extraction, hybrid retrieval, profile-aware ranking, and Thompson Sampling.',
+        result:
+          'The system achieved MRR 0.95 and NDCG@5 0.91; reported A/B tests increased first-hit CTR by 6.2% and 9.8%.',
         status: 'Under review',
         href: sharedProjects.links.procuraclaw,
         selected: true,
@@ -82,8 +85,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ddrg',
         title: 'DDRG',
         summary:
-          'Inference-time verification and repair for conflicting sampled reasoning graphs.',
-        result: 'Evaluated on five reasoning benchmarks with LLaMA-3.1-70B',
+          'Prototyped an inference-time reasoning-graph pipeline that probes answer-sensitive claims and gates local repairs conservatively.',
+        result:
+          'Evaluated Llama 3.1 70B on multiple reasoning benchmarks; controlled diagnostics informed conservative selection gates.',
         status: 'Ongoing',
         href: sharedProjects.links.ddrg,
       },
@@ -101,8 +105,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'neuromark',
         title: 'NeuroMark',
         summary:
-          'Multimodal clinical-reasoning evaluation across neurological and psychiatric tasks.',
-        result: '36 foundation models · 10+ datasets and examinations',
+          'Evaluated 20 LLMs on 2,379 clinical questions and 16 VLMs across six brain-imaging tasks.',
+        result:
+          'Contributed reliability analyses using safety compliance, effective accuracy, and difficulty discrimination.',
         status: 'Ongoing',
         href: sharedProjects.links.neuromark,
       },
@@ -122,7 +127,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       role: '信頼性と人間中心設計を重視するAIシステムを研究するソフトウェア工学専攻生。',
       interests: ['LLMエージェント', 'マルチモーダルLLM', 'AI for SE・HCI'],
       about:
-        '厦門大学ソフトウェア工学科の学部生（2023–2027）です。安全性が重要な環境、長期的な対話、協調作業におけるAIエージェントの評価と改善に取り組んでいます。',
+        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。安全性が重要な環境、長期的な対話、協調作業におけるAIエージェントの評価と改善に取り組んでいます。',
     },
     labels: {
       publications: '論文',
@@ -154,8 +159,8 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'pilotbench',
         title: 'PilotBench',
         summary:
-          '実飛行軌跡に基づく、安全制約付き一般航空エージェントの評価基盤。',
-        result: '708軌跡・41モデル・IJCNN 2026採択',
+          '708件の実飛行軌跡、34チャネルのテレメトリ、9飛行段階から安全制約付き評価基盤を共同開発。',
+        result: '41モデルの評価と精度・制御性、動的複雑性の分析に貢献。',
         status: '完了',
         href: sharedProjects.links.pilotbench,
         selected: true,
@@ -164,8 +169,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'lhmg',
         title: 'Long-Horizon Memory Governance',
         summary:
-          '長期エージェントの暗黙的な上書きと危険な記憶利用を防ぐ監査可能な記憶層。',
-        result: 'GPT-4oのターン間意思決定整合性：+13.3ポイント',
+          '追記型改訂、状態管理、リスクゲート、管理された忘却を備える記憶ガバナンス層のプロトタイプを開発。',
+        result:
+          '統制診断で、フラットメモリ比でGPT-4oのターン間意思決定整合性が13.3ポイント向上。',
         status: '査読中',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -174,8 +180,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
         summary:
-          '実運用された、ハイブリッド検索と施設特性対応ランキングを備える調達検索エージェント。',
-        result: 'MRR 0.95・NDCG@5 0.91・初回CTR +6.2% / +9.8%',
+          'LLMエンティティ抽出、ハイブリッド検索、施設特性対応ランキングを用いる実運用調達検索システムに貢献。',
+        result:
+          'システムはMRR 0.95、NDCG@5 0.91を達成し、報告されたA/Bテストで初回CTRが6.2%と9.8%向上。',
         status: '査読中',
         href: sharedProjects.links.procuraclaw,
         selected: true,
@@ -183,8 +190,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'ddrg',
         title: 'DDRG',
-        summary: '複数の推論グラフ間の矛盾を推論時に検証・修復する手法。',
-        result: 'LLaMA-3.1-70Bを用い5種の推論ベンチマークで評価',
+        summary:
+          '回答に影響する主張を検証し、局所修復を保守的に制御する推論時グラフパイプラインを試作。',
+        result:
+          'Llama 3.1 70Bを複数の推論ベンチマークで評価し、統制診断から保守的選択ゲートを設計。',
         status: '進行中',
         href: sharedProjects.links.ddrg,
       },
@@ -199,8 +208,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'neuromark',
         title: 'NeuroMark',
-        summary: '神経・精神科領域におけるマルチモーダル臨床推論評価。',
-        result: '36基盤モデル・10以上のデータセットと試験',
+        summary:
+          '2,379問の臨床問題で20のLLM、6つの脳画像タスクで16のVLMを評価。',
+        result: '安全性遵守、実効精度、難易度識別を用いた信頼性分析に貢献。',
         status: '進行中',
         href: sharedProjects.links.neuromark,
       },
@@ -220,7 +230,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       role: '关注可靠、人本人工智能系统的软件工程本科生。',
       interests: ['大语言模型智能体', '多模态大模型', 'AI for SE 与 HCI'],
       about:
-        '厦门大学软件工程本科生（2023–2027）。研究聚焦于安全关键、长程交互与人机协作场景中的智能体评测和改进。',
+        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。研究聚焦于安全关键、长程交互与人机协作场景中的智能体评测和改进。',
     },
     labels: {
       publications: '论文',
@@ -251,8 +261,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'pilotbench',
         title: 'PilotBench',
-        summary: '基于真实飞行轨迹构建的安全约束通用航空智能体评测基准。',
-        result: '708 条轨迹 · 41 个模型 · IJCNN 2026 录用',
+        summary:
+          '基于 708 条真实轨迹、34 通道遥测数据和 9 个飞行阶段共同开发安全约束评测基准。',
+        result: '参与 41 个模型的评测及精度—可控性与动态复杂度分析。',
         status: '已完成',
         href: sharedProjects.links.pilotbench,
         selected: true,
@@ -260,8 +271,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'lhmg',
         title: 'Long-Horizon Memory Governance',
-        summary: '防止长程智能体静默覆盖与高风险记忆注入的可审计记忆治理层。',
-        result: 'GPT-4o 跨轮决策一致性：+13.3 个百分点',
+        summary:
+          '开发包含追加式修订、活跃状态语义、风险门控与受控遗忘的记忆治理原型。',
+        result:
+          '在受控诊断中，相比平面记忆，GPT-4o 的跨轮决策一致性提高 13.3 个百分点。',
         status: '审稿中',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -269,8 +282,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
-        summary: '结合实体抽取、混合检索与酒店画像排序的已部署采购搜索智能体。',
-        result: 'MRR 0.95 · NDCG@5 0.91 · 首击 CTR +6.2% / +9.8%',
+        summary:
+          '参与已部署采购搜索系统，采用 LLM 实体抽取、混合检索、画像感知排序与 Thompson Sampling。',
+        result:
+          '系统达到 MRR 0.95、NDCG@5 0.91；报告的 A/B 测试中首击 CTR 提高 6.2% 和 9.8%。',
         status: '审稿中',
         href: sharedProjects.links.procuraclaw,
         selected: true,
@@ -278,8 +293,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'ddrg',
         title: 'DDRG',
-        summary: '对多条采样推理图中的冲突进行推理时验证与修复。',
-        result: '使用 LLaMA-3.1-70B 在五个推理基准上评测',
+        summary: '试制推理时图管线，探测答案敏感主张并对局部修复进行保守门控。',
+        result:
+          '使用 Llama 3.1 70B 在多个推理基准上评测；受控诊断用于收束保守选择门。',
         status: '进行中',
         href: sharedProjects.links.ddrg,
       },
@@ -294,8 +310,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         id: 'neuromark',
         title: 'NeuroMark',
-        summary: '面向神经与精神疾病任务的多模态临床推理评测。',
-        result: '36 个基础模型 · 10+ 数据集与专业考试',
+        summary:
+          '在 2,379 道临床问题上评测 20 个 LLM，并在 6 个脑影像任务上评测 16 个 VLM。',
+        result: '参与基于安全合规、有效准确率与难度区分度的可靠性分析。',
         status: '进行中',
         href: sharedProjects.links.neuromark,
       },

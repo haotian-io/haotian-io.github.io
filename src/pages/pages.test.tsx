@@ -17,7 +17,7 @@ describe('academic pages', () => {
   it('shows all six projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
     expect(screen.getAllByTestId('project')).toHaveLength(6);
-    expect(screen.getByText(/accepted at IJCNN 2026/i)).toBeInTheDocument();
+    expect(screen.getByText('Completed')).toBeInTheDocument();
     expect(screen.getAllByText('Under review')).toHaveLength(2);
   });
 
@@ -40,5 +40,28 @@ describe('academic pages', () => {
     ).not.toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
     expect(screen.getByText(/2026 年 1 月 – 4 月/)).toBeInTheDocument();
+  });
+
+  it('matches the corrected July 2026 CV wording', () => {
+    const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
+    expect(
+      screen.getByText(/B\.Eng\. in Software Engineering/),
+    ).toBeInTheDocument();
+    rerender(<ProjectsPage content={SITE_CONTENT.en} />);
+    expect(
+      screen.getByText(
+        /20 LLMs on 2,379 clinical questions and 16 VLMs across six brain-imaging tasks/,
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/Llama 3\.1 70B/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/In controlled diagnostics, observed a 13\.3-point/),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/contributed to a deployed procurement-search system/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(/IntrA|TOF-MRA|weak-label strategies|LLaMA-3\.1-70B/),
+    ).not.toBeInTheDocument();
   });
 });
