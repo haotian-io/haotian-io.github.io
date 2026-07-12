@@ -66,7 +66,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'haotian-liu-a92492347',
+    linkedin: 'haotian-liu-978010403',
     x: '',
     mastodon: '',
     researchGate: '',
@@ -113,7 +113,7 @@ const CONFIG = {
       company: 'H World Group, Shanghai',
       position: 'Research Intern',
       from: 'January 2026',
-      to: 'Present',
+      to: 'April 2026',
       companyLink: 'https://www.hworld.com',
     },
   ],

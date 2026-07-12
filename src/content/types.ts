@@ -34,5 +34,6 @@ export interface SiteContent {
     role: string;
     period: string;
     summary: string;
+    logo: string;
   };
 }

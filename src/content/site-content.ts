@@ -3,11 +3,11 @@ import type { Locale, SiteContent } from './types';
 const sharedProjects = {
   links: {
     pilotbench: 'https://arxiv.org/abs/2604.08987',
-    lhmg: 'https://github.com/haotian-io',
-    procuraclaw: 'https://github.com/haotian-io',
+    lhmg: 'https://github.com/haotian-io/Long-Horizon-Memory-Governance-for-LLM-Agents',
+    procuraclaw: 'https://github.com/haotian-io/ProcuraClaw',
     ddrg: 'https://github.com/haotian-io/DDRG',
     concordcoder: 'https://github.com/haotian-io/ConcordCoder',
-    neuromark: 'https://github.com/haotian-io',
+    neuromark: 'https://github.com/haotian-io/NeuroMark',
   },
 };
 
@@ -63,7 +63,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         title: 'Long-Horizon Memory Governance',
         summary:
           'An auditable memory layer that prevents silent overwrite and unsafe conditioning in long-horizon agents.',
-        result: 'Conflict update accuracy: 40.0% → 100.0% on GPT-4o',
+        result: 'GPT-4o cross-turn decision consistency: +13.3 points',
         status: 'Under review',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -110,8 +110,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: 'H World Group, Shanghai',
       role: 'AI Research Intern',
-      period: 'Jan. 2026 – Present',
+      period: 'Jan. 2026 – Apr. 2026',
       summary: 'Researching and deploying context-aware procurement search.',
+      logo: '/hworld-logo.ico',
     },
   },
   ja: {
@@ -164,7 +165,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         title: 'Long-Horizon Memory Governance',
         summary:
           '長期エージェントの暗黙的な上書きと危険な記憶利用を防ぐ監査可能な記憶層。',
-        result: 'GPT-4oの競合更新精度：40.0% → 100.0%',
+        result: 'GPT-4oのターン間意思決定整合性：+13.3ポイント',
         status: '査読中',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -207,8 +208,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: 'H World Group（上海）',
       role: 'AIリサーチインターン',
-      period: '2026年1月 – 現在',
+      period: '2026年1月 – 4月',
       summary: '文脈適応型調達検索の研究開発と実運用に従事。',
+      logo: '/hworld-logo.ico',
     },
   },
   zh: {
@@ -259,7 +261,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'lhmg',
         title: 'Long-Horizon Memory Governance',
         summary: '防止长程智能体静默覆盖与高风险记忆注入的可审计记忆治理层。',
-        result: 'GPT-4o 冲突更新准确率：40.0% → 100.0%',
+        result: 'GPT-4o 跨轮决策一致性：+13.3 个百分点',
         status: '审稿中',
         href: sharedProjects.links.lhmg,
         selected: true,
@@ -301,8 +303,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: '华住集团（上海）',
       role: 'AI 研究实习生',
-      period: '2026 年 1 月 – 至今',
+      period: '2026 年 1 月 – 4 月',
       summary: '研究并落地上下文感知的采购搜索系统。',
+      logo: '/hworld-logo.ico',
     },
   },
 };

@@ -103,14 +103,14 @@ main {
 }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
+  grid-template-columns: minmax(0, 1fr) 184px;
   gap: 56px;
   align-items: center;
   padding-bottom: 44px;
 }
 .hero img {
-  width: 136px;
-  height: 136px;
+  width: 172px;
+  height: 172px;
   object-fit: cover;
   border-radius: 50%;
   filter: saturate(0.78);
@@ -271,6 +271,19 @@ h1 {
   margin: 5px 0 0;
   font-size: 0.85rem;
 }
+.experience-entry {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  align-items: start;
+}
+.experience-entry > img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border: 1px solid #dce3ea;
+  border-radius: 7px;
+}
 
 .projects-page > header {
   padding-bottom: 42px;
@@ -343,12 +356,12 @@ footer {
     padding-top: 52px;
   }
   .hero {
-    grid-template-columns: 1fr 74px;
+    grid-template-columns: 1fr 94px;
     gap: 18px;
   }
   .hero img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     align-self: start;
   }
   .hero-role,

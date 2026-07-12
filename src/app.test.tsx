@@ -33,5 +33,9 @@ describe('app shell', () => {
       'rel',
       'noreferrer',
     );
+    expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/haotian-liu-978010403/',
+    );
   });
 });

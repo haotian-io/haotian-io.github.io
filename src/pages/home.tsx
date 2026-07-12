@@ -27,7 +27,7 @@ export function HomePage({ content }: { content: SiteContent }) {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/haotian-liu-a92492347/"
+              href="https://www.linkedin.com/in/haotian-liu-978010403/"
               target="_blank"
               rel="noreferrer"
             >
@@ -105,12 +105,15 @@ export function HomePage({ content }: { content: SiteContent }) {
         aria-labelledby="experience-title"
       >
         <h2 id="experience-title">{content.labels.experience}</h2>
-        <div>
-          <h3>{content.experience.organization}</h3>
-          <p>
-            {content.experience.role} · {content.experience.period}
-          </p>
-          <p>{content.experience.summary}</p>
+        <div className="experience-entry">
+          <img src={content.experience.logo} alt="H World Group logo" />
+          <div>
+            <h3>{content.experience.organization}</h3>
+            <p>
+              {content.experience.role} · {content.experience.period}
+            </p>
+            <p>{content.experience.summary}</p>
+          </div>
         </div>
       </section>
     </>
