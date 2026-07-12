@@ -22,17 +22,16 @@ The site must remain academically restrained: short factual copy, evidence-led p
 - Projects
 - CV
 - Language switcher
-- Restrained light/dark appearance toggle
 
 ### Home
 
 1. Hero: name, one-sentence professional identity, three research-interest labels, portrait, and professional links.
-2. Publications: three concise publication entries with accurate status and direct links where available.
-3. Selected projects: four high-signal projects chosen from the complete project set.
-4. Experience: research and industry experience.
-5. Education.
-6. Compact technical skills.
-7. Professional contact callout.
+2. About: a short paragraph that incorporates current education and research focus.
+3. Publications: at most three entries with accurate status and direct links where available.
+4. Selected projects: at most three high-signal projects, each limited to one sentence and one key result.
+5. Current experience: one compact entry.
+
+Do not add separate education, skills, contact, GitHub activity, or statistics sections. The homepage should read as a compact academic calling card rather than a full CV rendered on the web.
 
 ### Projects
 
@@ -45,7 +44,7 @@ Display all six current research projects:
 - ConcordCoder
 - NeuroMark
 
-Each entry contains only the problem, approach, key evidence or result, status, and relevant paper/repository link. The page does not add complex filters or ornamental interactions.
+Each entry is a short card containing a one-sentence summary, one key result where available, status, and relevant paper/repository link. The page does not add complex filters or ornamental interactions.
 
 ### Footer
 
@@ -78,8 +77,8 @@ Retain the existing React/Vite application and reuse sound GitProfile components
 
 - Typed multilingual content module containing English, Japanese, and Chinese records with a shared schema.
 - Locale provider responsible for locale selection, persistence, English fallback, and document-language metadata.
-- Shared site shell containing navigation, theme control, language control, main content, and footer.
-- Home page composed from focused hero, publication, selected-project, experience, education, and skills sections.
+- Shared site shell containing navigation, language control, main content, and footer.
+- Home page composed from focused hero, about, publication, selected-project, and current-experience sections.
 - Projects page rendering the complete manually curated project collection.
 - Reusable restrained card and section primitives shared across both pages.
 
@@ -87,13 +86,12 @@ Use lightweight client-side routing compatible with GitHub Pages. Direct visits 
 
 ## Visual System
 
-- Light theme: white and soft gray surfaces, deep navy text, restrained cyan-blue accents.
-- Dark theme: near-navy surfaces with accessible light text and the same limited accent family.
-- Remove the large theme catalogue, avatar ring, heavy shadows, bright theme colors, and decorative card styling.
-- Use a clear responsive grid, fine separators, moderate whitespace, consistent small-radius corners, and compact typography.
+- Use a single light visual system: white and soft gray surfaces, deep navy text, and restrained cyan-blue links.
+- Remove the theme catalogue, dark-mode toggle, avatar ring, heavy shadows, bright theme colors, gradients, and decorative card styling.
+- Use a clear responsive grid, fine separators, moderate whitespace, minimal borders, and compact typography.
 - Keep the portrait in the hero at secondary visual priority to the name and research identity.
 - Desktop layouts may use two columns where they improve scanning; mobile layouts collapse to a natural single column.
-- Motion is limited to subtle entry and link feedback and is disabled or reduced when `prefers-reduced-motion` requests it.
+- Do not use entry animation. Interaction feedback is limited to color and underline changes.
 
 ## Error Handling and Resilience
 
@@ -107,7 +105,7 @@ Use lightweight client-side routing compatible with GitHub Pages. Direct visits 
 
 - Use semantic landmarks and heading order.
 - Ensure keyboard access and visible focus states for navigation, language, theme, and links.
-- Maintain WCAG-appropriate text contrast in both themes.
+- Maintain WCAG-appropriate text contrast.
 - Provide meaningful alternative text for the portrait and project imagery, if imagery is retained.
 - Update page title, description, Open Graph metadata, and document language for the selected locale.
 
@@ -120,13 +118,14 @@ Before release:
 - Verify English default, Japanese and Chinese switching, persistence, fallback, and document metadata.
 - Check publication wording, project results, dates, professional links, CV download, and removal of private/social contact data.
 - Test GitHub API failure behavior.
-- Visually inspect representative desktop and mobile sizes in light and dark modes.
+- Visually inspect representative desktop and mobile sizes.
 - Check keyboard navigation, focus visibility, heading structure, contrast, and reduced-motion behavior.
 
 ## Explicit Non-goals
 
 - Replacing React/Vite/GitHub Pages with a new stack.
 - A blog, content-management system, visitor dashboard, or complex project filters.
-- Elaborate animation, 3D effects, large gradients, or decorative technology motifs.
+- A standalone skills section, separate education section, GitHub activity feed, statistics, or verbose project narratives.
+- Dark mode, elaborate animation, 3D effects, gradients, or decorative technology motifs.
 - Separate independently maintained pages for each language.
 - Publishing unverified claims or elevating under-review work to accepted status.
