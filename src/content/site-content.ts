@@ -16,10 +16,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'Home', projects: 'Projects', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: 'Researching multimodal LLM agents for software engineering and human–computer interaction.',
-      interests: ['LLM Agents', 'Multimodal LLMs', 'AI for SE & HCI'],
+      role: 'Multimodal LLM Agents · AI for Software Engineering · Human–Computer Interaction',
+      interests: [
+        'Multimodal LLM Agents',
+        'AI for Software Engineering',
+        'Human–Computer Interaction',
+      ],
       about:
-        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research interests center on multimodal large language model agents, with applications to software engineering and human–computer interaction.',
+        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction.',
     },
     labels: {
       publications: 'Publications',
@@ -124,10 +128,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'ホーム', projects: 'プロジェクト', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: 'ソフトウェア工学とHCIに向けたマルチモーダルLLMエージェントを研究。',
-      interests: ['LLMエージェント', 'マルチモーダルLLM', 'AI for SE・HCI'],
+      role: 'マルチモーダルLLMエージェント · AIを活用したソフトウェア工学 · ヒューマン・コンピュータ・インタラクション',
+      interests: [
+        'マルチモーダルLLMエージェント',
+        'AIを活用したソフトウェア工学',
+        'ヒューマン・コンピュータ・インタラクション',
+      ],
       about:
-        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。マルチモーダル大規模言語モデルエージェントを中心に、ソフトウェア工学とヒューマン・コンピュータ・インタラクションへの応用を研究しています。',
+        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクションです。',
     },
     labels: {
       publications: '論文',
@@ -227,10 +235,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: '主页', projects: '项目', cv: '简历' },
     identity: {
       name: '刘浩天',
-      role: '研究面向软件工程与人机交互的多模态大语言模型智能体。',
-      interests: ['大语言模型智能体', '多模态大模型', 'AI for SE 与 HCI'],
+      role: '多模态大语言模型智能体 · 人工智能赋能的软件工程 · 人机交互',
+      interests: [
+        '多模态大语言模型智能体',
+        '人工智能赋能的软件工程',
+        '人机交互',
+      ],
       about:
-        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。我的研究兴趣聚焦于多模态大语言模型智能体，以及其在软件工程与人机交互中的应用。',
+        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。我的研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互。',
     },
     labels: {
       publications: '论文',

@@ -69,16 +69,20 @@ describe('academic pages', () => {
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByText(
-        /research interests center on multimodal large language model agents/i,
+        /research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction/i,
       ),
     ).toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
     expect(
-      screen.getByText(/研究兴趣聚焦于多模态大语言模型智能体/),
+      screen.getByText(
+        /研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互/,
+      ),
     ).toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.ja} />);
     expect(
-      screen.getByText(/マルチモーダル大規模言語モデルエージェントを中心に/),
+      screen.getByText(
+        /研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクション/,
+      ),
     ).toBeInTheDocument();
   });
 });
