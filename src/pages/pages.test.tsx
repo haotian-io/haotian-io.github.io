@@ -6,9 +6,10 @@ import { ProjectsPage } from './projects';
 
 describe('academic pages', () => {
   it('keeps the English homepage compact', () => {
-    render(<HomePage content={SITE_CONTENT.en} />);
+    const { container } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(screen.getAllByTestId('publication')).toHaveLength(3);
     expect(screen.getAllByTestId('selected-project')).toHaveLength(3);
+    expect(container.querySelector('.hero-role')).not.toBeInTheDocument();
     expect(
       screen.queryByRole('heading', { name: /skills|education/i }),
     ).not.toBeInTheDocument();

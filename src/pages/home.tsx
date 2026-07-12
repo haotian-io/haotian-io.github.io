@@ -11,7 +11,6 @@ export function HomePage({ content }: { content: SiteContent }) {
         <div>
           <p className="eyebrow">Xiamen University · Software Engineering</p>
           <h1 id="hero-title">{content.identity.name}</h1>
-          <p className="hero-role">{content.identity.role}</p>
           <ul className="interest-list" aria-label="Research interests">
             {content.identity.interests.map((interest) => (
               <li key={interest}>{interest}</li>

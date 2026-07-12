@@ -150,13 +150,6 @@ h1 {
   letter-spacing: -0.045em;
   line-height: 0.98;
 }
-.hero-role {
-  max-width: 650px;
-  margin: 20px 0 0;
-  color: #344b61;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.6;
-}
 .interest-list {
   display: flex;
   flex-wrap: wrap;
@@ -382,7 +375,6 @@ footer {
     height: 90px;
     align-self: start;
   }
-  .hero-role,
   .interest-list,
   .profile-links {
     grid-column: 1 / -1;
