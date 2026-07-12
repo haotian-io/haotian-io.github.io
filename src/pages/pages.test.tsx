@@ -10,6 +10,7 @@ describe('academic pages', () => {
     expect(screen.getAllByTestId('publication')).toHaveLength(3);
     expect(screen.getAllByTestId('selected-project')).toHaveLength(3);
     expect(container.querySelector('.hero-role')).not.toBeInTheDocument();
+    expect(container.querySelector('.interest-list')).not.toBeInTheDocument();
     expect(
       screen.queryByText('Xiamen University · Software Engineering'),
     ).not.toBeInTheDocument();
@@ -69,13 +70,14 @@ describe('academic pages', () => {
     ).not.toBeInTheDocument();
   });
 
-  it('states the MLLM agent research direction consistently in all locales', () => {
+  it('keeps research interests only in the biography', () => {
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByText(
         /research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction/i,
       ),
     ).toBeInTheDocument();
+    expect(screen.queryByText('Multimodal LLM Agents')).not.toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
     expect(
       screen.getByText(

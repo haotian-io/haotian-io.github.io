@@ -10,11 +10,6 @@ export function HomePage({ content }: { content: SiteContent }) {
       <section className="hero" aria-labelledby="hero-title">
         <div>
           <h1 id="hero-title">{content.identity.name}</h1>
-          <ul className="interest-list" aria-label="Research interests">
-            {content.identity.interests.map((interest) => (
-              <li key={interest}>{interest}</li>
-            ))}
-          </ul>
           <div className="profile-links" aria-label="Professional profiles">
             <a href="mailto:haotianliu.me@gmail.com">Email</a>
             <a

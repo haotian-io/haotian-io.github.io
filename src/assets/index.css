@@ -150,22 +150,6 @@ h1 {
   letter-spacing: -0.045em;
   line-height: 0.98;
 }
-.interest-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px 20px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-  color: #284961;
-  font-size: 0.82rem;
-  font-weight: 650;
-}
-.interest-list li::before {
-  content: '·';
-  margin-right: 8px;
-  color: #1682a8;
-}
 .profile-links {
   display: flex;
   flex-wrap: wrap;
@@ -375,7 +359,6 @@ footer {
     height: 90px;
     align-self: start;
   }
-  .interest-list,
   .profile-links {
     grid-column: 1 / -1;
   }
