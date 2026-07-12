@@ -16,10 +16,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'Home', projects: 'Projects', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: 'Software Engineering undergraduate working on reliable, human-centered AI systems.',
+      role: 'Researching multimodal LLM agents for software engineering and human–computer interaction.',
       interests: ['LLM Agents', 'Multimodal LLMs', 'AI for SE & HCI'],
       about:
-        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research focuses on evaluating and improving AI agents in safety-critical, long-horizon, and collaborative settings.',
+        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research interests center on multimodal large language model agents, with applications to software engineering and human–computer interaction.',
     },
     labels: {
       publications: 'Publications',
@@ -124,10 +124,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'ホーム', projects: 'プロジェクト', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: '信頼性と人間中心設計を重視するAIシステムを研究するソフトウェア工学専攻生。',
+      role: 'ソフトウェア工学とHCIに向けたマルチモーダルLLMエージェントを研究。',
       interests: ['LLMエージェント', 'マルチモーダルLLM', 'AI for SE・HCI'],
       about:
-        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。安全性が重要な環境、長期的な対話、協調作業におけるAIエージェントの評価と改善に取り組んでいます。',
+        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。マルチモーダル大規模言語モデルエージェントを中心に、ソフトウェア工学とヒューマン・コンピュータ・インタラクションへの応用を研究しています。',
     },
     labels: {
       publications: '論文',
@@ -227,10 +227,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: '主页', projects: '项目', cv: '简历' },
     identity: {
       name: '刘浩天',
-      role: '关注可靠、人本人工智能系统的软件工程本科生。',
+      role: '研究面向软件工程与人机交互的多模态大语言模型智能体。',
       interests: ['大语言模型智能体', '多模态大模型', 'AI for SE 与 HCI'],
       about:
-        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。研究聚焦于安全关键、长程交互与人机协作场景中的智能体评测和改进。',
+        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。我的研究兴趣聚焦于多模态大语言模型智能体，以及其在软件工程与人机交互中的应用。',
     },
     labels: {
       publications: '论文',

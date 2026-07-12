@@ -64,4 +64,21 @@ describe('academic pages', () => {
       screen.queryByText(/IntrA|TOF-MRA|weak-label strategies|LLaMA-3\.1-70B/),
     ).not.toBeInTheDocument();
   });
+
+  it('states the MLLM agent research direction consistently in all locales', () => {
+    const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
+    expect(
+      screen.getByText(
+        /research interests center on multimodal large language model agents/i,
+      ),
+    ).toBeInTheDocument();
+    rerender(<HomePage content={SITE_CONTENT.zh} />);
+    expect(
+      screen.getByText(/研究兴趣聚焦于多模态大语言模型智能体/),
+    ).toBeInTheDocument();
+    rerender(<HomePage content={SITE_CONTENT.ja} />);
+    expect(
+      screen.getByText(/マルチモーダル大規模言語モデルエージェントを中心に/),
+    ).toBeInTheDocument();
+  });
 });
