@@ -121,14 +121,14 @@ main {
 }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 184px;
-  gap: 56px;
+  grid-template-columns: minmax(0, 1fr) 228px;
+  gap: 48px;
   align-items: center;
   padding-bottom: 44px;
 }
-.hero img {
-  width: 172px;
-  height: 172px;
+.hero-portrait-large {
+  width: 216px;
+  height: 216px;
   object-fit: cover;
   border-radius: 50%;
   filter: saturate(0.78);
@@ -351,12 +351,12 @@ footer {
     padding-top: 52px;
   }
   .hero {
-    grid-template-columns: 1fr 94px;
+    grid-template-columns: 1fr 116px;
     gap: 18px;
   }
-  .hero img {
-    width: 90px;
-    height: 90px;
+  .hero-portrait-large {
+    width: 108px;
+    height: 108px;
     align-self: start;
   }
   .profile-links {

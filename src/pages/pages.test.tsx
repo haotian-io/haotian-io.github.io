@@ -21,6 +21,9 @@ describe('academic pages', () => {
 
   it('uses the high-resolution local portrait', () => {
     render(<HomePage content={SITE_CONTENT.en} />);
+    expect(screen.getByAltText('Portrait of Haotian Liu')).toHaveClass(
+      'hero-portrait-large',
+    );
     expect(screen.getByAltText('Portrait of Haotian Liu')).toHaveAttribute(
       'src',
       '/Avatar.jpg',
