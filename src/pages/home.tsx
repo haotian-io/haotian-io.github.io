@@ -35,10 +35,7 @@ export function HomePage({ content }: { content: SiteContent }) {
             </a>
           </div>
         </div>
-        <img
-          src="https://github.com/haotian-io.png?size=240"
-          alt="Portrait of Haotian Liu"
-        />
+        <img src="/Avatar.jpg" alt="Portrait of Haotian Liu" />
       </section>
 
       <section className="about" aria-label="About">

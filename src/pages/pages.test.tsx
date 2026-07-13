@@ -19,6 +19,14 @@ describe('academic pages', () => {
     ).not.toBeInTheDocument();
   });
 
+  it('uses the high-resolution local portrait', () => {
+    render(<HomePage content={SITE_CONTENT.en} />);
+    expect(screen.getByAltText('Portrait of Haotian Liu')).toHaveAttribute(
+      'src',
+      '/Avatar.jpg',
+    );
+  });
+
   it('shows all six projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
     expect(screen.getAllByTestId('project')).toHaveLength(6);
