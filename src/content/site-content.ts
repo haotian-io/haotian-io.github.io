@@ -43,7 +43,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'Long-Horizon Memory Governance for LLM Agents',
-        venue: 'EMNLP 2026 · Under review',
+        venue: 'ICASSP 2027 · Under review',
         role: 'First author',
       },
       {
@@ -124,11 +124,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       logo: '/xmu-emblem.jpg',
       rankings: [
         {
-          label: 'U.S. News 2025–2026: #189',
-          href: 'https://my.xmu.edu.cn/admissions/faq',
+          label: 'U.S. News: #189',
+          href: 'https://www.usnews.com/education/best-global-universities/xiamen-university-506410',
         },
         {
-          label: 'ARWU 2025: #101–150',
+          label: 'ARWU: #101–150',
           href: 'https://www.shanghairanking.com/universities/Xiamen-University',
         },
       ],
@@ -171,7 +171,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LLMエージェントの長期記憶ガバナンス',
-        venue: 'EMNLP 2026・査読中',
+        venue: 'ICASSP 2027・査読中',
         role: '筆頭著者',
       },
       {
@@ -248,11 +248,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       logo: '/xmu-emblem.jpg',
       rankings: [
         {
-          label: 'U.S. News 2025–2026：世界189位',
-          href: 'https://my.xmu.edu.cn/admissions/faq',
+          label: 'U.S. News：世界189位',
+          href: 'https://www.usnews.com/education/best-global-universities/xiamen-university-506410',
         },
         {
-          label: 'ARWU 2025：世界101–150位',
+          label: 'ARWU：世界101–150位',
           href: 'https://www.shanghairanking.com/universities/Xiamen-University',
         },
       ],
@@ -295,7 +295,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: '面向大语言模型智能体的长程记忆治理',
-        venue: 'EMNLP 2026 · 审稿中',
+        venue: 'ICASSP 2027 · 审稿中',
         role: '第一作者',
       },
       {
@@ -371,11 +371,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       logo: '/xmu-emblem.jpg',
       rankings: [
         {
-          label: 'U.S. News 2025–2026：全球第 189 位',
-          href: 'https://my.xmu.edu.cn/admissions/faq',
+          label: 'U.S. News：全球第 189 位',
+          href: 'https://www.usnews.com/education/best-global-universities/xiamen-university-506410',
         },
         {
-          label: 'ARWU 2025：全球第 101–150 位',
+          label: 'ARWU：全球第 101–150 位',
           href: 'https://www.shanghairanking.com/universities/Xiamen-University',
         },
       ],

@@ -21,7 +21,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <nav aria-label="Primary navigation">
           <a href="#/">{content.nav.home}</a>
           <a href="#/projects">{content.nav.projects}</a>
-          <a href="/CV_Haotian_Liu_202607_SGU.pdf">{content.nav.cv}</a>
+          <a href="/CV_Haotian_Liu.pdf">{content.nav.cv}</a>
         </nav>
         <div className="locale-switcher" aria-label="Language">
           {locales.map(([value, label]) => (

@@ -32,10 +32,13 @@ describe('academic pages', () => {
       ),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('link', { name: /U\.S\. News.*#189/ }),
-    ).toHaveAttribute('href', 'https://my.xmu.edu.cn/admissions/faq');
+      screen.getByRole('link', { name: 'U.S. News: #189' }),
+    ).toHaveAttribute(
+      'href',
+      'https://www.usnews.com/education/best-global-universities/xiamen-university-506410',
+    );
     expect(
-      screen.getByRole('link', { name: /ARWU.*#101–150/ }),
+      screen.getByRole('link', { name: 'ARWU: #101–150' }),
     ).toHaveAttribute(
       'href',
       'https://www.shanghairanking.com/universities/Xiamen-University',
@@ -71,6 +74,12 @@ describe('academic pages', () => {
     expect(screen.getAllByTestId('project')).toHaveLength(6);
     expect(screen.getByText('Completed')).toBeInTheDocument();
     expect(screen.getAllByText('Under review')).toHaveLength(2);
+  });
+
+  it('shows the current LHMG submission venue', () => {
+    render(<HomePage content={SITE_CONTENT.en} />);
+    expect(screen.getByText('ICASSP 2027 · Under review')).toBeInTheDocument();
+    expect(screen.queryByText(/EMNLP 2026/)).not.toBeInTheDocument();
   });
 
   it('uses the corrected project links and experience details', () => {

@@ -27,7 +27,7 @@ describe('app shell', () => {
     expect(screen.getByAltText('Portrait of Haotian Liu')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'CV' })).toHaveAttribute(
       'href',
-      '/CV_Haotian_Liu_202607_SGU.pdf',
+      '/CV_Haotian_Liu.pdf',
     );
     expect(screen.getByRole('link', { name: 'GitHub' })).toHaveAttribute(
       'rel',
