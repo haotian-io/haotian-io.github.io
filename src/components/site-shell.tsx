@@ -38,7 +38,9 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <main>{children}</main>
       <footer>
         <span>© 2026 Haotian Liu</span>
-        <a href="mailto:haotianliu.me@gmail.com">haotianliu.me@gmail.com</a>
+        <a href="mailto:haotianliu.me%40gmail.com">
+          haotianliu.me[AT]gmail.com
+        </a>
       </footer>
     </div>
   );

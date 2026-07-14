@@ -85,7 +85,7 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '',
-    email: 'haotianliu.me@gmail.com',
+    email: 'haotianliu.me[AT]gmail.com',
   },
   resume: {
     fileUrl:
