@@ -46,6 +46,34 @@ export function HomePage({ content }: { content: SiteContent }) {
         <p>{content.identity.about}</p>
       </section>
 
+      <section
+        className="section profile-section"
+        aria-labelledby="education-title"
+      >
+        <h2 id="education-title">{content.labels.education}</h2>
+        <div className="profile-entry">
+          <img src={content.education.logo} alt="Xiamen University emblem" />
+          <div>
+            <h3>{content.education.organization}</h3>
+            <p>
+              {content.education.degree} · {content.education.period}
+            </p>
+            <div className="ranking-links">
+              {content.education.rankings.map((ranking) => (
+                <a
+                  href={ranking.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={ranking.label}
+                >
+                  {ranking.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section" aria-labelledby="publications-title">
         <h2 id="publications-title">{content.labels.publications}</h2>
         <div className="rows">
@@ -95,11 +123,11 @@ export function HomePage({ content }: { content: SiteContent }) {
       </section>
 
       <section
-        className="section experience"
+        className="section profile-section"
         aria-labelledby="experience-title"
       >
         <h2 id="experience-title">{content.labels.experience}</h2>
-        <div className="experience-entry">
+        <div className="profile-entry">
           <img src={content.experience.logo} alt="H World Group logo" />
           <div>
             <h3>{content.experience.organization}</h3>

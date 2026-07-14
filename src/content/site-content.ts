@@ -23,12 +23,13 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         'Human–Computer Interaction',
       ],
       about:
-        'I am pursuing a B.Eng. in Software Engineering at Xiamen University (2023–2027). My research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction.',
+        'My research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction.',
     },
     labels: {
+      education: 'Education',
       publications: 'Publications',
       selectedProjects: 'Selected Projects',
-      experience: 'Current Experience',
+      experience: 'Industry Experience',
       allProjects: 'Projects',
       viewProject: 'View',
     },
@@ -116,11 +117,27 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         href: sharedProjects.links.neuromark,
       },
     ],
+    education: {
+      organization: 'Xiamen University',
+      degree: 'B.Eng. in Software Engineering',
+      period: 'Sep. 2023 – Jun. 2027 (expected)',
+      logo: '/xmu-emblem.jpg',
+      rankings: [
+        {
+          label: 'U.S. News 2025–2026: #189',
+          href: 'https://my.xmu.edu.cn/admissions/faq',
+        },
+        {
+          label: 'ARWU 2025: #101–150',
+          href: 'https://www.shanghairanking.com/universities/Xiamen-University',
+        },
+      ],
+    },
     experience: {
       organization: 'H World Group, Shanghai',
       role: 'AI Research Intern',
       period: 'Jan. 2026 – Apr. 2026',
-      summary: 'Researching and deploying context-aware procurement search.',
+      summary: 'Worked on context-aware procurement search.',
       logo: '/hworld-logo.ico',
     },
   },
@@ -135,12 +152,13 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         'ヒューマン・コンピュータ・インタラクション',
       ],
       about:
-        '厦門大学でソフトウェア工学のB.Eng.取得を目指す学部生（2023–2027）です。研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクションです。',
+        '研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクションです。',
     },
     labels: {
+      education: '学歴',
       publications: '論文',
       selectedProjects: '主要プロジェクト',
-      experience: '現在の所属',
+      experience: '実務経験',
       allProjects: 'プロジェクト',
       viewProject: '詳細',
     },
@@ -223,6 +241,22 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         href: sharedProjects.links.neuromark,
       },
     ],
+    education: {
+      organization: '厦門大学',
+      degree: 'ソフトウェア工学 B.Eng.',
+      period: '2023年9月 – 2027年6月（取得見込み）',
+      logo: '/xmu-emblem.jpg',
+      rankings: [
+        {
+          label: 'U.S. News 2025–2026：世界189位',
+          href: 'https://my.xmu.edu.cn/admissions/faq',
+        },
+        {
+          label: 'ARWU 2025：世界101–150位',
+          href: 'https://www.shanghairanking.com/universities/Xiamen-University',
+        },
+      ],
+    },
     experience: {
       organization: 'H World Group（上海）',
       role: 'AIリサーチインターン',
@@ -242,12 +276,13 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         '人机交互',
       ],
       about:
-        '厦门大学软件工程专业工学学士（B.Eng.）在读（2023–2027）。我的研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互。',
+        '我的研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互。',
     },
     labels: {
+      education: '教育经历',
       publications: '论文',
       selectedProjects: '精选项目',
-      experience: '当前经历',
+      experience: '行业经历',
       allProjects: '项目',
       viewProject: '查看',
     },
@@ -329,11 +364,27 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         href: sharedProjects.links.neuromark,
       },
     ],
+    education: {
+      organization: '厦门大学',
+      degree: '软件工程工学学士（B.Eng.）',
+      period: '2023 年 9 月 – 2027 年 6 月（预计）',
+      logo: '/xmu-emblem.jpg',
+      rankings: [
+        {
+          label: 'U.S. News 2025–2026：全球第 189 位',
+          href: 'https://my.xmu.edu.cn/admissions/faq',
+        },
+        {
+          label: 'ARWU 2025：全球第 101–150 位',
+          href: 'https://www.shanghairanking.com/universities/Xiamen-University',
+        },
+      ],
+    },
     experience: {
       organization: '华住集团（上海）',
       role: 'AI 研究实习生',
       period: '2026 年 1 月 – 4 月',
-      summary: '研究并落地上下文感知的采购搜索系统。',
+      summary: '参与上下文感知采购搜索系统的研究与落地。',
       logo: '/hworld-logo.ico',
     },
   },

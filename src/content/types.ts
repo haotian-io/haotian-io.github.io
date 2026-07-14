@@ -21,6 +21,7 @@ export interface SiteContent {
   nav: { home: string; projects: string; cv: string };
   identity: { name: string; role: string; interests: string[]; about: string };
   labels: {
+    education: string;
     publications: string;
     selectedProjects: string;
     experience: string;
@@ -29,6 +30,13 @@ export interface SiteContent {
   };
   publications: Publication[];
   projects: Project[];
+  education: {
+    organization: string;
+    degree: string;
+    period: string;
+    logo: string;
+    rankings: Array<{ label: string; href: string }>;
+  };
   experience: {
     organization: string;
     role: string;

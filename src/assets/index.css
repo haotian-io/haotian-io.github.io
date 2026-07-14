@@ -201,7 +201,7 @@ h1 {
 }
 .publication-row h3,
 .project-card h3,
-.experience h3 {
+.profile-section h3 {
   margin: 0;
   color: #21384e;
   font-size: 0.98rem;
@@ -238,7 +238,7 @@ h1 {
   border-left: 1px solid #dce3ea;
 }
 .project-card p:not(.project-status),
-.experience p,
+.profile-section p,
 .project-list p {
   color: #536679;
   line-height: 1.6;
@@ -258,26 +258,33 @@ h1 {
   font-size: 0.76rem;
   line-height: 1.55;
 }
-.experience {
+.profile-section {
   display: grid;
   grid-template-columns: 180px 1fr;
 }
-.experience p {
+.profile-section p {
   margin: 5px 0 0;
   font-size: 0.85rem;
 }
-.experience-entry {
+.profile-entry {
   display: grid;
   grid-template-columns: 42px 1fr;
   gap: 15px;
   align-items: start;
 }
-.experience-entry > img {
+.profile-entry > img {
   width: 36px;
   height: 36px;
   object-fit: contain;
   border: 1px solid #dce3ea;
   border-radius: 7px;
+}
+.ranking-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  margin-top: 6px;
+  font-size: 0.76rem;
 }
 
 .projects-page > header {
@@ -363,7 +370,7 @@ footer {
     grid-column: 1 / -1;
   }
   .publication-row,
-  .experience,
+  .profile-section,
   .project-list article {
     grid-template-columns: 1fr;
     gap: 8px;

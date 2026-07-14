@@ -15,8 +15,44 @@ describe('academic pages', () => {
       screen.queryByText('Xiamen University · Software Engineering'),
     ).not.toBeInTheDocument();
     expect(
-      screen.queryByRole('heading', { name: /skills|education/i }),
+      screen.queryByRole('heading', { name: /skills/i }),
     ).not.toBeInTheDocument();
+  });
+
+  it('shows a concise education entry with official rankings', () => {
+    render(<HomePage content={SITE_CONTENT.en} />);
+    expect(
+      screen.getByRole('heading', { name: 'Education' }),
+    ).toBeInTheDocument();
+    expect(screen.getByAltText('Xiamen University emblem')).toBeInTheDocument();
+    expect(screen.getByText('Xiamen University')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /B\.Eng\. in Software Engineering · Sep\. 2023 – Jun\. 2027/,
+      ),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /U\.S\. News.*#189/ }),
+    ).toHaveAttribute('href', 'https://my.xmu.edu.cn/admissions/faq');
+    expect(
+      screen.getByRole('link', { name: /ARWU.*#101–150/ }),
+    ).toHaveAttribute(
+      'href',
+      'https://www.shanghairanking.com/universities/Xiamen-University',
+    );
+  });
+
+  it('labels the completed internship as industry experience', () => {
+    render(<HomePage content={SITE_CONTENT.en} />);
+    expect(
+      screen.getByRole('heading', { name: 'Industry Experience' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole('heading', { name: 'Current Experience' }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByText('Worked on context-aware procurement search.'),
+    ).toBeInTheDocument();
   });
 
   it('uses the high-resolution local portrait', () => {
