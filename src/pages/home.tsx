@@ -11,7 +11,7 @@ export function HomePage({ content }: { content: SiteContent }) {
         <div>
           <h1 id="hero-title">{content.identity.name}</h1>
           <div className="profile-links" aria-label="Professional profiles">
-            <span>haotianliu.me[AT]gmail.com</span>
+            <span className="profile-email">haotianliu.me[AT]gmail.com</span>
             <a
               href="https://github.com/haotian-io"
               target="_blank"

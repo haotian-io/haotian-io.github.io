@@ -158,6 +158,9 @@ h1 {
   font-size: 0.84rem;
   font-weight: 650;
 }
+.profile-email {
+  flex-basis: 100%;
+}
 .about {
   max-width: 760px;
   padding: 26px 0 56px;
