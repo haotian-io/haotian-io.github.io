@@ -43,7 +43,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'Long-Horizon Memory Governance for LLM Agents',
-        venue: 'ICASSP 2027 · Under review',
+        venue: 'AAAI 2027 · Under review',
         role: 'First author',
       },
       {
@@ -171,7 +171,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LLMエージェントの長期記憶ガバナンス',
-        venue: 'ICASSP 2027・査読中',
+        venue: 'AAAI 2027・査読中',
         role: '筆頭著者',
       },
       {
@@ -295,7 +295,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: '面向大语言模型智能体的长程记忆治理',
-        venue: 'ICASSP 2027 · 审稿中',
+        venue: 'AAAI 2027 · 审稿中',
         role: '第一作者',
       },
       {

@@ -78,7 +78,7 @@ describe('academic pages', () => {
 
   it('shows the current LHMG submission venue', () => {
     render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getByText('ICASSP 2027 · Under review')).toBeInTheDocument();
+    expect(screen.getByText('AAAI 2027 · Under review')).toBeInTheDocument();
     expect(screen.queryByText(/EMNLP 2026/)).not.toBeInTheDocument();
   });
 
