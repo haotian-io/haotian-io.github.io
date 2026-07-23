@@ -82,25 +82,25 @@ describe('academic pages', () => {
     expect(screen.queryByText(/EMNLP 2026/)).not.toBeInTheDocument();
   });
 
-  it('uses the corrected project links and experience details', () => {
+  it('links only to public project materials and uses consistent experience details', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
     const links = screen
       .getAllByRole('link')
       .map((link) => link.getAttribute('href'));
-    expect(links).toContain('https://github.com/haotian-io/NeuroMark');
-    expect(links).toContain(
-      'https://github.com/haotian-io/Long-Horizon-Memory-Governance-for-LLM-Agents',
-    );
-    expect(links).toContain('https://github.com/haotian-io/ProcuraClaw');
+    expect(links).toEqual(['https://arxiv.org/abs/2604.08987']);
 
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getByText(/Jan\. 2026 – Apr\. 2026/)).toBeInTheDocument();
+    expect(screen.getByText(/Nov\. 2025 – Apr\. 2026/)).toBeInTheDocument();
     expect(screen.getByAltText('H World Group logo')).toBeInTheDocument();
     expect(
       screen.queryByText(/Conflict update accuracy/i),
     ).not.toBeInTheDocument();
+    rerender(<HomePage content={SITE_CONTENT.ja} />);
+    expect(screen.getByText(/2025年11月 – 2026年4月/)).toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
-    expect(screen.getByText(/2026 年 1 月 – 4 月/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/2025 年 11 月 – 2026 年 4 月/),
+    ).toBeInTheDocument();
   });
 
   it('matches the corrected July 2026 CV wording', () => {

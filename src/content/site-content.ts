@@ -3,11 +3,6 @@ import type { Locale, SiteContent } from './types';
 const sharedProjects = {
   links: {
     pilotbench: 'https://arxiv.org/abs/2604.08987',
-    lhmg: 'https://github.com/haotian-io/Long-Horizon-Memory-Governance-for-LLM-Agents',
-    procuraclaw: 'https://github.com/haotian-io/ProcuraClaw',
-    ddrg: 'https://github.com/haotian-io/DDRG',
-    concordcoder: 'https://github.com/haotian-io/ConcordCoder',
-    neuromark: 'https://github.com/haotian-io/NeuroMark',
   },
 };
 
@@ -72,7 +67,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'In controlled diagnostics, observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.',
         status: 'Under review',
-        href: sharedProjects.links.lhmg,
         selected: true,
       },
       {
@@ -83,7 +77,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'The system achieved MRR 0.95 and NDCG@5 0.91; reported A/B tests increased first-hit CTR by 6.2% and 9.8%.',
         status: 'Under review',
-        href: sharedProjects.links.procuraclaw,
         selected: true,
       },
       {
@@ -94,7 +87,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'Evaluated Llama 3.1 70B on multiple reasoning benchmarks; controlled diagnostics informed conservative selection gates.',
         status: 'Ongoing',
-        href: sharedProjects.links.ddrg,
       },
       {
         id: 'concordcoder',
@@ -104,7 +96,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'Inspectable AlignmentRecord and controlled evaluation protocol',
         status: 'Ongoing',
-        href: sharedProjects.links.concordcoder,
       },
       {
         id: 'neuromark',
@@ -114,7 +105,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'Contributed reliability analyses using safety compliance, effective accuracy, and difficulty discrimination.',
         status: 'Ongoing',
-        href: sharedProjects.links.neuromark,
       },
     ],
     education: {
@@ -136,7 +126,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: 'H World Group, Shanghai',
       role: 'AI Research Intern',
-      period: 'Jan. 2026 – Apr. 2026',
+      period: 'Nov. 2025 – Apr. 2026',
       summary: 'Worked on context-aware procurement search.',
       logo: '/hworld-logo.ico',
     },
@@ -199,7 +189,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '統制診断で、フラットメモリ比でGPT-4oのターン間意思決定整合性が13.3ポイント向上。',
         status: '査読中',
-        href: sharedProjects.links.lhmg,
         selected: true,
       },
       {
@@ -210,7 +199,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'システムはMRR 0.95、NDCG@5 0.91を達成し、報告されたA/Bテストで初回CTRが6.2%と9.8%向上。',
         status: '査読中',
-        href: sharedProjects.links.procuraclaw,
         selected: true,
       },
       {
@@ -221,7 +209,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'Llama 3.1 70Bを複数の推論ベンチマークで評価し、統制診断から保守的選択ゲートを設計。',
         status: '進行中',
-        href: sharedProjects.links.ddrg,
       },
       {
         id: 'concordcoder',
@@ -229,7 +216,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         summary: 'コード生成前に制約とリスクを確認する事前整合フレームワーク。',
         result: '検証可能なAlignmentRecordと統制評価プロトコル',
         status: '進行中',
-        href: sharedProjects.links.concordcoder,
       },
       {
         id: 'neuromark',
@@ -238,7 +224,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '2,379問の臨床問題で20のLLM、6つの脳画像タスクで16のVLMを評価。',
         result: '安全性遵守、実効精度、難易度識別を用いた信頼性分析に貢献。',
         status: '進行中',
-        href: sharedProjects.links.neuromark,
       },
     ],
     education: {
@@ -260,7 +245,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: 'H World Group（上海）',
       role: 'AIリサーチインターン',
-      period: '2026年1月 – 4月',
+      period: '2025年11月 – 2026年4月',
       summary: '文脈適応型調達検索の研究開発と実運用に従事。',
       logo: '/hworld-logo.ico',
     },
@@ -323,7 +308,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '在受控诊断中，相比平面记忆，GPT-4o 的跨轮决策一致性提高 13.3 个百分点。',
         status: '审稿中',
-        href: sharedProjects.links.lhmg,
         selected: true,
       },
       {
@@ -334,7 +318,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '系统达到 MRR 0.95、NDCG@5 0.91；报告的 A/B 测试中首击 CTR 提高 6.2% 和 9.8%。',
         status: '审稿中',
-        href: sharedProjects.links.procuraclaw,
         selected: true,
       },
       {
@@ -344,7 +327,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '使用 Llama 3.1 70B 在多个推理基准上评测；受控诊断用于收束保守选择门。',
         status: '进行中',
-        href: sharedProjects.links.ddrg,
       },
       {
         id: 'concordcoder',
@@ -352,7 +334,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         summary: '在代码生成前确认任务约束与风险的预生成对齐框架。',
         result: '可审计 AlignmentRecord 与受控评测协议',
         status: '进行中',
-        href: sharedProjects.links.concordcoder,
       },
       {
         id: 'neuromark',
@@ -361,7 +342,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '在 2,379 道临床问题上评测 20 个 LLM，并在 6 个脑影像任务上评测 16 个 VLM。',
         result: '参与基于安全合规、有效准确率与难度区分度的可靠性分析。',
         status: '进行中',
-        href: sharedProjects.links.neuromark,
       },
     ],
     education: {
@@ -383,7 +363,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     experience: {
       organization: '华住集团（上海）',
       role: 'AI 研究实习生',
-      period: '2026 年 1 月 – 4 月',
+      period: '2025 年 11 月 – 2026 年 4 月',
       summary: '参与上下文感知采购搜索系统的研究与落地。',
       logo: '/hworld-logo.ico',
     },
