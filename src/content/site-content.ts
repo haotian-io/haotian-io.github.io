@@ -43,7 +43,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'ProcuraClaw: Context-Aware Procurement Search',
-        venue: 'CIKM 2026 · Under review',
+        venue: 'ICASSP 2027 · Under review',
         role: 'Co-first author',
       },
     ],
@@ -166,7 +166,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'ProcuraClaw: 文脈適応型調達検索',
-        venue: 'CIKM 2026・査読中',
+        venue: 'ICASSP 2027・査読中',
         role: '共同筆頭著者',
       },
     ],
@@ -285,7 +285,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'ProcuraClaw：上下文感知的采购搜索',
-        venue: 'CIKM 2026 · 审稿中',
+        venue: 'ICASSP 2027 · 审稿中',
         role: '共同一作',
       },
     ],
