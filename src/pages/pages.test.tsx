@@ -66,6 +66,13 @@ describe('academic pages', () => {
       ),
     ).toBeInTheDocument();
     expect(screen.getByAltText('ZGC LAB logo')).toBeInTheDocument();
+    const entries = screen
+      .getByText('H World Group, Shanghai')
+      .closest('.profile-entries');
+    expect(entries).not.toBeNull();
+    expect(entries).toBe(
+      screen.getByText('ZGC LAB, Beijing').closest('.profile-entries'),
+    );
   });
 
   it('uses the high-resolution local portrait', () => {

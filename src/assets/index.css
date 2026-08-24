@@ -275,6 +275,10 @@ h1 {
   gap: 15px;
   align-items: start;
 }
+.profile-entries {
+  display: grid;
+  gap: 24px;
+}
 .profile-entry > img {
   width: 36px;
   height: 36px;

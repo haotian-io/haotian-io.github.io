@@ -127,24 +127,26 @@ export function HomePage({ content }: { content: SiteContent }) {
         aria-labelledby="experience-title"
       >
         <h2 id="experience-title">{content.labels.experience}</h2>
-        {content.experience.map((experience) => (
-          <div
-            className="profile-entry"
-            key={`${experience.organization}-${experience.period}`}
-          >
-            <img
-              src={experience.logo}
-              alt={`${experience.organization.split(',')[0].split('（')[0]} logo`}
-            />
-            <div>
-              <h3>{experience.organization}</h3>
-              <p>
-                {experience.role} · {experience.period}
-              </p>
-              <p>{experience.summary}</p>
+        <div className="profile-entries">
+          {content.experience.map((experience) => (
+            <div
+              className="profile-entry"
+              key={`${experience.organization}-${experience.period}`}
+            >
+              <img
+                src={experience.logo}
+                alt={`${experience.organization.split(',')[0].split('（')[0]} logo`}
+              />
+              <div>
+                <h3>{experience.organization}</h3>
+                <p>
+                  {experience.role} · {experience.period}
+                </p>
+                <p>{experience.summary}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
     </>
   );
