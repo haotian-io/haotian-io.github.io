@@ -123,13 +123,23 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         },
       ],
     },
-    experience: {
-      organization: 'H World Group, Shanghai',
-      role: 'AI Research Intern',
-      period: 'Nov. 2025 – Apr. 2026',
-      summary: 'Worked on context-aware procurement search.',
-      logo: '/hworld-logo.ico',
-    },
+    experience: [
+      {
+        organization: 'H World Group, Shanghai',
+        role: 'AI Research Intern',
+        period: 'Nov. 2025 – Apr. 2026',
+        summary: 'Worked on context-aware procurement search.',
+        logo: '/hworld-logo.ico',
+      },
+      {
+        organization: 'ZGC LAB, Beijing',
+        role: 'Research Intern',
+        period: 'Aug. 2026 – Present',
+        summary:
+          'Researching multimodal LLM agents for software engineering and human–computer interaction.',
+        logo: '/zgc-lab-logo.png',
+      },
+    ],
   },
   ja: {
     nav: { home: 'ホーム', projects: 'プロジェクト', cv: 'CV' },
@@ -242,13 +252,23 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         },
       ],
     },
-    experience: {
-      organization: 'H World Group（上海）',
-      role: 'AIリサーチインターン',
-      period: '2025年11月 – 2026年4月',
-      summary: '文脈適応型調達検索の研究開発と実運用に従事。',
-      logo: '/hworld-logo.ico',
-    },
+    experience: [
+      {
+        organization: 'H World Group（上海）',
+        role: 'AIリサーチインターン',
+        period: '2025年11月 – 2026年4月',
+        summary: '文脈適応型調達検索の研究開発と実運用に従事。',
+        logo: '/hworld-logo.ico',
+      },
+      {
+        organization: 'ZGC LAB（北京）',
+        role: 'リサーチインターン',
+        period: '2026年8月 – 現在',
+        summary:
+          'マルチモーダルLLMエージェントのソフトウェア工学・HCI応用を研究。',
+        logo: '/zgc-lab-logo.png',
+      },
+    ],
   },
   zh: {
     nav: { home: '主页', projects: '项目', cv: '简历' },
@@ -360,12 +380,21 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         },
       ],
     },
-    experience: {
-      organization: '华住集团（上海）',
-      role: 'AI 研究实习生',
-      period: '2025 年 11 月 – 2026 年 4 月',
-      summary: '参与上下文感知采购搜索系统的研究与落地。',
-      logo: '/hworld-logo.ico',
-    },
+    experience: [
+      {
+        organization: '华住集团（上海）',
+        role: 'AI 研究实习生',
+        period: '2025 年 11 月 – 2026 年 4 月',
+        summary: '参与上下文感知采购搜索系统的研究与落地。',
+        logo: '/hworld-logo.ico',
+      },
+      {
+        organization: 'ZGC LAB（北京）',
+        role: '科研实习生',
+        period: '2026 年 8 月 – 至今',
+        summary: '研究多模态大语言模型智能体在软件工程与人机交互中的应用。',
+        logo: '/zgc-lab-logo.png',
+      },
+    ],
   },
 };

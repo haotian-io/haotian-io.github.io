@@ -45,7 +45,7 @@ describe('academic pages', () => {
     );
   });
 
-  it('labels the completed internship as industry experience', () => {
+  it('shows both industry experience entries with concise details', () => {
     render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByRole('heading', { name: 'Industry Experience' }),
@@ -56,6 +56,16 @@ describe('academic pages', () => {
     expect(
       screen.getByText('Worked on context-aware procurement search.'),
     ).toBeInTheDocument();
+    expect(screen.getByText('ZGC LAB, Beijing')).toBeInTheDocument();
+    expect(
+      screen.getByText('Research Intern · Aug. 2026 – Present'),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        'Researching multimodal LLM agents for software engineering and human–computer interaction.',
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getByAltText('ZGC LAB logo')).toBeInTheDocument();
   });
 
   it('uses the high-resolution local portrait', () => {

@@ -37,11 +37,11 @@ export interface SiteContent {
     logo: string;
     rankings: Array<{ label: string; href: string }>;
   };
-  experience: {
+  experience: Array<{
     organization: string;
     role: string;
     period: string;
     summary: string;
     logo: string;
-  };
+  }>;
 }
