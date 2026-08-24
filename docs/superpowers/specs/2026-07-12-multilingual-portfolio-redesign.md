@@ -67,7 +67,7 @@ Publication status must be precise:
 
 - PilotBench: accepted at IJCNN 2026; link to arXiv where available.
 - LHMG: under review at EMNLP 2026.
-- ProcuraClaw: under review at CIKM 2026.
+- ProcuraClaw: under review at ICASSP 2027.
 
 Under-review work must not be presented as accepted or published. Project links should point to the specific repository or paper when available, not the general GitHub profile.
 
