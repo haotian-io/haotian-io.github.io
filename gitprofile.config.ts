@@ -41,7 +41,7 @@ const CONFIG = {
         {
           title: 'CETI: Evidence-Constrained Collaborative Task Interpretation',
           description:
-            'First-authored system (with ZGC Lab/PKU and Waseda University) that intercepts the cognitive gap–intent gap in repository-level AI coding. CETI generates atomic task-constraint Records bound to repository evidence, letting developers inspect and revise an agent's interpretation before a patch is generated. Includes a three-condition human study over ten FEA-Bench cases.',
+            `First-authored system (with ZGC Lab/PKU and Waseda University) that intercepts the cognitive gap–intent gap in repository-level AI coding. CETI generates atomic task-constraint Records bound to repository evidence, letting developers inspect and revise an agent's interpretation before a patch is generated. Includes a three-condition human study over ten FEA-Bench cases.`,
           link: 'https://github.com/haotian-io',
         },
         {
