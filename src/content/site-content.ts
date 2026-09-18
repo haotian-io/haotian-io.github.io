@@ -38,11 +38,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'Long-Horizon Memory Governance for LLM Agents',
-        venue: 'AAAI 2027 · Under review',
+        venue: 'ICASSP 2027 · Under review',
         role: 'First author',
       },
       {
-        title: 'ProcuraClaw: Context-Aware Procurement Search',
+        title: 'Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries',
         venue: 'ICASSP 2027 · Under review',
         role: 'Co-first author',
       },
@@ -90,20 +90,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         id: 'concordcoder',
-        title: 'ConcordCoder',
+        title: 'CETI',
         summary:
-          'Pre-generation alignment that confirms task constraints and risks before AI-generated code changes.',
+          'Identified the cognitive gap–intent gap in repository-level AI coding; proposed CETI, generating atomic task-constraint Records bound to repository evidence so developers can inspect and revise an agent's interpretation before a patch is generated.',
         result:
-          'Inspectable AlignmentRecord and controlled evaluation protocol',
-        status: 'Ongoing',
-      },
-      {
-        id: 'neuromark',
-        title: 'NeuroMark',
-        summary:
-          'Evaluated 20 LLMs on 2,379 clinical questions and 16 VLMs across six brain-imaging tasks.',
-        result:
-          'Contributed reliability analyses using safety compliance, effective accuracy, and difficulty discrimination.',
+          'Four-stage pipeline (repository inspection, source binding, developer review, coding handoff) and a three-condition human study over ten FEA-Bench cases. Collaboration with ZGC Lab (PKU) and Waseda University.',
         status: 'Ongoing',
       },
     ],
@@ -128,7 +119,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         organization: 'H World Group, Shanghai',
         role: 'AI Research Intern',
         period: 'Nov. 2025 – Apr. 2026',
-        summary: 'Worked on context-aware procurement search.',
+        summary: 'Built and deployed a context-aware B2B procurement-search system (ProcuraClaw) with four-path hybrid retrieval, hotel-profile-driven ranking, and Thompson Sampling online adaptation.',
         logo: '/hworld-logo.ico',
       },
       {
@@ -171,11 +162,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LLMエージェントの長期記憶ガバナンス',
-        venue: 'AAAI 2027・査読中',
+        venue: 'ICASSP 2027・査読中',
         role: '筆頭著者',
       },
       {
-        title: 'ProcuraClaw: 文脈適応型調達検索',
+        title: '口語的中国語調達クエリのノイズロバスト検索のための較正語彙融合',
         venue: 'ICASSP 2027・査読中',
         role: '共同筆頭著者',
       },
@@ -222,17 +213,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         id: 'concordcoder',
-        title: 'ConcordCoder',
-        summary: 'コード生成前に制約とリスクを確認する事前整合フレームワーク。',
-        result: '検証可能なAlignmentRecordと統制評価プロトコル',
-        status: '進行中',
-      },
-      {
-        id: 'neuromark',
-        title: 'NeuroMark',
+        title: 'CETI',
         summary:
-          '2,379問の臨床問題で20のLLM、6つの脳画像タスクで16のVLMを評価。',
-        result: '安全性遵守、実効精度、難易度識別を用いた信頼性分析に貢献。',
+          'リポジトリレベルAIコーディングにおける認知ギャップと意図ギャップを特定し、エージェントの解釈をパッチ生成前に開発者が検査・修正できるCETIを提案。',
+        result:
+          '4段階パイプラインと3条件の人間研究（FEA-Bench 10ケース）。ZGC Lab（北京大）・早稲田大学との共同研究。',
         status: '進行中',
       },
     ],
@@ -300,11 +285,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: '面向大语言模型智能体的长程记忆治理',
-        venue: 'AAAI 2027 · 审稿中',
+        venue: 'ICASSP 2027 · 审稿中',
         role: '第一作者',
       },
       {
-        title: 'ProcuraClaw：上下文感知的采购搜索',
+        title: '面向口语化中文采购查询的噪声鲁棒检索校准词汇融合',
         venue: 'ICASSP 2027 · 审稿中',
         role: '共同一作',
       },
@@ -350,17 +335,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         id: 'concordcoder',
-        title: 'ConcordCoder',
-        summary: '在代码生成前确认任务约束与风险的预生成对齐框架。',
-        result: '可审计 AlignmentRecord 与受控评测协议',
-        status: '进行中',
-      },
-      {
-        id: 'neuromark',
-        title: 'NeuroMark',
-        summary:
-          '在 2,379 道临床问题上评测 20 个 LLM，并在 6 个脑影像任务上评测 16 个 VLM。',
-        result: '参与基于安全合规、有效准确率与难度区分度的可靠性分析。',
+        title: 'CETI',
+        summary: '识别代码仓库级 AI 编程中的认知差距与意图差距；提出 CETI，生成与代码证据绑定的原子约束记录，让开发者在生成补丁前检查并修正智能体的任务理解。',
+        result: '四阶段流水线与三条件人类研究（10 个 FEA-Bench 案例）。与 ZGC Lab（北京大学）和早稻田大学合作。',
         status: '进行中',
       },
     ],

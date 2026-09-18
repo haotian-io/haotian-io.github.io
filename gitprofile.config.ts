@@ -33,27 +33,27 @@ const CONFIG = {
       header: 'My Projects',
       projects: [
         {
-          title: 'MLLM: Role-Playing Consistency Evaluation and Enhancement',
+          title: 'LHMG: Long-Horizon Memory Governance for LLM Agents',
           description:
-            'Built a 90-role bilingual benchmark with 100k+ instructions; surfaced a ~40% gap between open-source (LLaMA, ChatGLM) and GPT-5 on character knowledge; applied Context-Instruct tuning to cut persona OOC and lift CUS/style mimicry of 7B models by 10.4%; delivered automated+manual evaluation with >0.68 human correlation and solid OOD generalization.',
+            'First-authored framework that augments LLM agents with conflict-aware revision graphs, No-Silent-Overwrite semantics, and Risk-Gated Memory Conditioning to prevent silent state corruption in long-range reasoning. Observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory. Under review at ICASSP 2027 after reviews at ICML.',
+          link: 'https://github.com/haotian-io/Long-Horizon-Memory-Governance-for-LLM-Agents',
+        },
+        {
+          title: 'CETI: Evidence-Constrained Collaborative Task Interpretation',
+          description:
+            'First-authored system (with ZGC Lab/PKU and Waseda University) that intercepts the cognitive gap–intent gap in repository-level AI coding. CETI generates atomic task-constraint Records bound to repository evidence, letting developers inspect and revise an agent's interpretation before a patch is generated. Includes a three-condition human study over ten FEA-Bench cases.',
           link: 'https://github.com/haotian-io',
         },
         {
-          title: 'MLLM: Clinical Reasoning for Brain Disease Detection',
+          title: 'PilotBench: Safety-Critical Benchmark for Aviation Agents',
           description:
-            'Reproduced IntrA 3D point cloud and TOF-MRA diagnostics to ~70% accuracy; mapped 3D/imaging features into structured JSON and VLM reasoning to surface 5% occult rupture risks; validated weak-label schemes that doubled 3D aneurysm labeling efficiency with no detection drop.',
-          link: 'https://github.com/haotian-io',
+            'Co-developed a benchmark from 708 real flight trajectories, 34-channel telemetry, and nine flight phases; evaluated 41 models. Contributed to Pilot-Score design and analyses identifying a precision–controllability dichotomy and a dynamic-complexity gap in high-workload phases. Accepted at IJCNN 2026.',
+          link: 'https://arxiv.org/abs/2604.08987',
         },
         {
-          title: 'AI4S: Agent-driven Peptide Functional Prediction',
+          title: 'Calibrated Lexical Fusion for Colloquial Chinese Procurement Retrieval',
           description:
-            'Reproduced CPPpred-En to 97.27% accuracy (MCC 0.945) on CPP924, beating SiameseCPP; engineered an agent pipeline blending 69 physico-chemical features with 8 PLM embeddings and automated evaluation of 552 pairs via soft-voting ensemble; ablations+t-SNE showed a 2.19% gain from physico-chemical features.',
-          link: 'https://github.com/haotian-io',
-        },
-        {
-          title: 'Unity AI Interactive Picture Book',
-          description:
-            'Partnered with Xiaoqian Tech end-to-end; piloted at Yanwu Primary School and secured national software copyright; built a multi-agent UnityWebRequest system orchestrating 3 AIGC APIs (Tongyi, Baidu, etc.) for dynamic text, illustration, and music; drove requirements through OKRs and standardized rollout/rollback.',
+            'Built and deployed a B2B procurement-search system for H World Group (华住) handling colloquial, misspelled, and alias-rich Chinese queries. Designed a four-path hybrid retrieval pipeline (exact / fuzzy / synonym / selective semantic) fused with RRF and a hotel-profile-driven quality function. Achieved MRR 0.95, NDCG@5 0.91 with 6.2%/9.8% CTR gains in A/B tests. Under review at ICASSP 2027.',
           link: 'https://github.com/haotian-io',
         },
       ],
@@ -93,26 +93,24 @@ const CONFIG = {
   },
   skills: [
     'Python',
-    'Java',
-    'JavaEE',
-    'Spring Boot',
-    'SQL',
-    'Data Analysis',
-    'Feature Engineering',
+    'PyTorch',
+    'HuggingFace',
+    'LLM Agents',
+    'RAG / IR',
+    'Benchmark Design',
     'Model Evaluation',
+    'Java / Spring Boot',
+    'SQL',
+    'C/C++',
     'Git',
     'Linux',
-    'VS Code',
-    'DevOps',
-    'Scrum',
-    'LLM/MLLM',
-    'PyTorch',
+    'Docker',
   ],
   experiences: [
     {
       company: 'H World Group, Shanghai',
-      position: 'Research Intern',
-      from: 'January 2026',
+      position: 'AI Research Intern',
+      from: 'November 2025',
       to: 'April 2026',
       companyLink: 'https://www.hworld.com',
     },
@@ -135,25 +133,44 @@ const CONFIG = {
   ],
   publications: [
     {
+      title: 'PilotBench: A Benchmark for General Aviation Agents with Safety Constraints',
+      conferenceName: 'IJCNN 2026 · Accepted',
+      journalName: '',
+      authors:
+        'Yalun Wu, Boyang Wang, Haotian Liu, et al.',
+      link: 'https://arxiv.org/abs/2604.08987',
+      description:
+        'PilotBench is a safety-critical benchmark built from 708 real flight trajectories with 34-channel telemetry across nine flight phases. It evaluates 41 models using Pilot-Score, revealing a precision–controllability dichotomy and a dynamic-complexity gap in high-workload phases.',
+    },
+    {
       title: 'Long-Horizon Memory Governance for LLM Agents',
-      conferenceName: 'ICML 2026',
+      conferenceName: 'ICASSP 2027 · Under review',
       journalName: '',
       authors:
         'Boyang Wang, Yueling Liu, Yalun Wu, Haotian Liu, Xianjie Wu, Zhoujun Li',
-      link: 'https://openreview.net/forum?id=25959',
+      link: '',
       description:
-        'This paper proposes Long-Horizon Memory Governance (LHMG), a framework that augments LLM agents with principled memory management to address key failure modes in long-range reasoning. LHMG introduces conflict-aware revision graphs, strict No-Silent-Overwrite principles, and Risk-Gated Memory Conditioning mechanisms to ensure reliable long-term memory over extended interactions.',
+        'Proposes LHMG, a framework augmenting LLM agents with conflict-aware revision graphs, No-Silent-Overwrite semantics, and Risk-Gated Memory Conditioning to stabilize long-range reasoning. Observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.',
     },
     {
-      title:
-        'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
-      conferenceName: 'ICML 2026',
+      title: 'Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries',
+      conferenceName: 'ICASSP 2027 · Under review',
+      journalName: '',
+      authors:
+        'Haotian Liu, et al.',
+      link: '',
+      description:
+        'Addresses retrieval of colloquial, misspelled, and alias-rich Chinese B2B procurement queries via calibrated lexical fusion. A four-path hybrid pipeline (exact, fuzzy, synonym, selective semantic) fused with RRF and hotel-profile-driven ranking achieves MRR 0.95, NDCG@5 0.91 with significant CTR gains in live A/B tests.',
+    },
+    {
+      title: 'FLY-EVAL++: Agentic Verification for Safety-Constrained Modeling in Embodied Contexts',
+      conferenceName: 'COLM 2026',
       journalName: '',
       authors:
         'Yalun Wu, Boyang Wang, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Hongcheng Guo, Zhoujun Li',
-      link: 'https://openreview.net/forum?id=32836',
+      link: 'https://arxiv.org/abs/2609.04021',
       description:
-        'FLY-EVAL++ is an Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated and validated in real-world flight modeling. This work addresses the evaluation gap in physics-governed systems where success depends not only on numerical accuracy but also on producing structurally valid, operationally usable outputs that respect physical feasibility and safety constraints.',
+        'An Agentic Verification methodology for evaluating LLM predictions in safety-constrained embodied contexts, instantiated in real-world flight modeling. Addresses the evaluation gap in physics-governed systems where success depends on structural validity and operational feasibility, not just numerical accuracy.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
