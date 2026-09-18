@@ -92,7 +92,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'concordcoder',
         title: 'CETI',
         summary:
-          'Identified the cognitive gap–intent gap in repository-level AI coding; proposed CETI, generating atomic task-constraint Records bound to repository evidence so developers can inspect and revise an agent's interpretation before a patch is generated.',
+          `Identified the cognitive gap–intent gap in repository-level AI coding; proposed CETI, generating atomic task-constraint Records bound to repository evidence so developers can inspect and revise an agent's interpretation before a patch is generated.`,
         result:
           'Four-stage pipeline (repository inspection, source binding, developer review, coding handoff) and a three-condition human study over ten FEA-Bench cases. Collaboration with ZGC Lab (PKU) and Waseda University.',
         status: 'Ongoing',
