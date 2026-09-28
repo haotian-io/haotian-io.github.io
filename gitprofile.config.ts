@@ -88,8 +88,7 @@ const CONFIG = {
     email: 'haotianliu.me[AT]gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://github.com/haotian-io/haotian-io.github.io/raw/main/LIUHAOTIAN_CV.pdf',
+    fileUrl: '/CV_Haotian_Liu.pdf',
   },
   skills: [
     'Python',
