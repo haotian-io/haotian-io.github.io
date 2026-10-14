@@ -7,7 +7,7 @@ import { ProjectsPage } from './projects';
 describe('academic pages', () => {
   it('keeps the English homepage compact', () => {
     const { container } = render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('publication')).toHaveLength(3);
+    expect(screen.getAllByTestId('publication')).toHaveLength(2);
     expect(screen.getAllByTestId('selected-project')).toHaveLength(3);
     expect(container.querySelector('.hero-role')).not.toBeInTheDocument();
     expect(container.querySelector('.interest-list')).not.toBeInTheDocument();
@@ -52,7 +52,7 @@ describe('academic pages', () => {
       screen.queryByRole('heading', { name: 'Current Experience' }),
     ).not.toBeInTheDocument();
     expect(
-      screen.getByText(/Contributed to ProcuraClaw and its LFUSE retrieval layer/),
+      screen.getByText(/Developed LFUSE for ProcuraClaw/),
     ).toBeInTheDocument();
     expect(screen.getByText('ZGC LAB, Beijing')).toBeInTheDocument();
     expect(
@@ -84,17 +84,11 @@ describe('academic pages', () => {
     );
   });
 
-  it('shows all four projects with accurate status wording', () => {
+  it('shows all five projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('project')).toHaveLength(4);
-    expect(screen.getByText('Completed')).toBeInTheDocument();
+    expect(screen.getAllByTestId('project')).toHaveLength(5);
+    expect(screen.getAllByText('Completed')).toHaveLength(2);
     expect(screen.getAllByText('Under review')).toHaveLength(2);
-  });
-
-  it('shows the current LHMG submission venue', () => {
-    render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByText('Under review')).toHaveLength(4);
-    expect(screen.queryByText(/EMNLP 2026/)).not.toBeInTheDocument();
   });
 
   it('links only to public project materials and uses consistent experience details', () => {
@@ -126,6 +120,7 @@ describe('academic pages', () => {
     rerender(<ProjectsPage content={SITE_CONTENT.en} />);
     expect(screen.getByText(/LFUSE retrieval layer/)).toBeInTheDocument();
     expect(screen.getByText(/24 participants and 72 cases/)).toBeInTheDocument();
+    expect(screen.getByText(/NeuroMark: Multimodal Reliability Evaluation/)).toBeInTheDocument();
     expect(
       screen.getByText(/contributed to a deployed procurement-search system/i),
     ).toBeInTheDocument();
