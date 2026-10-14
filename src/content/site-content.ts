@@ -3,7 +3,6 @@ import type { Locale, SiteContent } from './types';
 const sharedProjects = {
   links: {
     pilotbench: 'https://arxiv.org/abs/2604.08987',
-    procuraclaw: 'https://github.com/haotian-io/ProcuraClaw',
   },
 };
 
@@ -79,7 +78,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           'LFUSE improves MRR@10 over tuned convex fusion by 7.8% on average across three human-judged Chinese domains, with 80–100× lower fusion-stage latency than LLM-adaptive fusion.',
         status: 'Under review',
         selected: true,
-        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',
@@ -195,7 +193,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '3つの中国語人手評価ドメインで、調整済み凸結合を上回るMRR@10を平均7.8%改善し、LLM適応融合より融合段階の遅延を80–100分の1に抑制。',
         status: '査読中',
         selected: true,
-        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',
@@ -311,7 +308,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '在三个中文人工评测域上，LFUSE 的 MRR@10 比调优后的凸组合平均提升 7.8%，融合阶段延迟比 LLM 自适应融合低 80–100 倍。',
         status: '审稿中',
         selected: true,
-        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',

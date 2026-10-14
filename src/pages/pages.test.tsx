@@ -102,10 +102,7 @@ describe('academic pages', () => {
     const links = screen
       .getAllByRole('link')
       .map((link) => link.getAttribute('href'));
-    expect(links).toEqual([
-      'https://arxiv.org/abs/2604.08987',
-      'https://github.com/haotian-io/ProcuraClaw',
-    ]);
+    expect(links).toEqual(['https://arxiv.org/abs/2604.08987']);
 
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(screen.getByText(/Nov\. 2025 – Apr\. 2026/)).toBeInTheDocument();
