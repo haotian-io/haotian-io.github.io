@@ -80,12 +80,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         selected: true,
       },
       {
-        id: 'concordcoder',
-        title: 'CETI',
+        id: 'ceti',
+        title: 'CETI: Collaborative Evidence-Constrained Task Interpretation',
         summary:
-          `Identified the cognitive gap–intent gap in repository-level AI coding; proposed CETI, generating atomic task-constraint Records bound to repository evidence so developers can inspect and revise an agent's interpretation before a patch is generated.`,
+          'Designed a pre-coding review workflow that turns repository evidence into atomic, source-linked task constraints (Records) for developers to inspect and revise before an agent codes.',
         result:
-          'Four-stage pipeline (repository inspection, source binding, developer review, coding handoff) and a three-condition human study over ten FEA-Bench cases. Collaboration with ZGC Lab (PKU) and Waseda University.',
+          'In a 24-participant study across 72 cases, Records-2 showed the largest descriptive understanding gain: a 17.2-point adjusted contrast against FreeChat-2 (95% CI [−6.0, 40.5]). A separate handoff analysis covered 504 coding attempts across 10 tasks and 3 models.',
         status: 'Ongoing',
       },
     ],
@@ -194,12 +194,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         selected: true,
       },
       {
-        id: 'concordcoder',
-        title: 'CETI',
+        id: 'ceti',
+        title: 'CETI：Collaborative Evidence-Constrained Task Interpretation',
         summary:
-          'リポジトリレベルAIコーディングにおける認知ギャップと意図ギャップを特定し、エージェントの解釈をパッチ生成前に開発者が検査・修正できるCETIを提案。',
+          'リポジトリの証拠を原子単位のタスク制約（Records）に変換し、コーディング前に開発者が検査・修正できるレビュー方式を設計。',
         result:
-          '4段階パイプラインと3条件の人間研究（FEA-Bench 10ケース）。ZGC Lab（北京大）・早稲田大学との共同研究。',
+          '24名・72ケースの研究で、Records-2はFreeChat-2に対して調整済みで17.2ポイント高い記述的理解向上を示した（95% CI [−6.0, 40.5]）。別の引き継ぎ分析では、10タスク・3モデル・504回のコーディング試行を分析。',
         status: '進行中',
       },
     ],
@@ -308,10 +308,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         selected: true,
       },
       {
-        id: 'concordcoder',
-        title: 'CETI',
-        summary: '识别代码仓库级 AI 编程中的认知差距与意图差距；提出 CETI，生成与代码证据绑定的原子约束记录，让开发者在生成补丁前检查并修正智能体的任务理解。',
-        result: '四阶段流水线与三条件人类研究（10 个 FEA-Bench 案例）。与 ZGC Lab（北京大学）和早稻田大学合作。',
+        id: 'ceti',
+        title: 'CETI：协作式证据约束任务解释',
+        summary:
+          '设计面向代码生成前审查的工作流，将仓库证据组织为与源码片段绑定的原子任务约束（Records），供开发者在智能体编码前检查和修订。',
+        result:
+          '24 名参与者、72 个案例的研究中，Records-2 的描述性理解提升最大：相对 FreeChat-2 的调整后差异为 17.2 个百分点（95% CI [−6.0, 40.5]）。另有 504 次编码尝试，覆盖 10 个任务和 3 个模型。',
         status: '进行中',
       },
     ],
