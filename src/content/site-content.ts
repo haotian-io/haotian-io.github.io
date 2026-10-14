@@ -3,6 +3,7 @@ import type { Locale, SiteContent } from './types';
 const sharedProjects = {
   links: {
     pilotbench: 'https://arxiv.org/abs/2604.08987',
+    procuraclaw: 'https://github.com/haotian-io/ProcuraClaw',
   },
 };
 
@@ -38,11 +39,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'Long-Horizon Memory Governance for LLM Agents',
-        venue: 'ICASSP 2027 · Under review',
+        venue: 'Under review',
         role: 'First author',
       },
       {
-        title: 'Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries',
+        title:
+          'LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search',
         venue: 'ICASSP 2027 · Under review',
         role: 'Co-first author',
       },
@@ -73,11 +75,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
         summary:
-          'Contributed to a deployed procurement-search system using LLM entity extraction, hybrid retrieval, profile-aware ranking, and Thompson Sampling.',
+          'Contributed to a deployed procurement-search system and its LFUSE retrieval layer, which fuses lexical and dense evidence for noisy typed, spoken, and image-grounded product requests.',
         result:
-          'The system achieved MRR 0.95 and NDCG@5 0.91; reported A/B tests increased first-hit CTR by 6.2% and 9.8%.',
+          'LFUSE improves MRR@10 over tuned convex fusion by 7.8% on average across three human-judged Chinese domains, with 80–100× lower fusion-stage latency than LLM-adaptive fusion.',
         status: 'Under review',
         selected: true,
+        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',
@@ -110,7 +113,8 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         organization: 'H World Group, Shanghai',
         role: 'AI Research Intern',
         period: 'Nov. 2025 – Apr. 2026',
-        summary: 'Built and deployed a context-aware B2B procurement-search system (ProcuraClaw) with four-path hybrid retrieval, hotel-profile-driven ranking, and Thompson Sampling online adaptation.',
+        summary:
+          'Contributed to ProcuraClaw and its LFUSE retrieval layer for noisy typed, spoken, and image-grounded procurement requests.',
         logo: '/hworld-logo.ico',
       },
       {
@@ -153,11 +157,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LLMエージェントの長期記憶ガバナンス',
-        venue: 'ICASSP 2027・査読中',
+        venue: '査読中',
         role: '筆頭著者',
       },
       {
-        title: '口語的中国語調達クエリのノイズロバスト検索のための較正語彙融合',
+        title: 'LFUSE：ノイズの多い音声・画像指示商品検索のための学習型証拠融合',
         venue: 'ICASSP 2027・査読中',
         role: '共同筆頭著者',
       },
@@ -187,11 +191,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
         summary:
-          'LLMエンティティ抽出、ハイブリッド検索、施設特性対応ランキングを用いる実運用調達検索システムに貢献。',
+          '実運用の調達検索システムと、語彙・密ベクトルの証拠を融合してノイズの多い文字・音声・画像指示の商品検索に対応するLFUSE層に貢献。',
         result:
-          'システムはMRR 0.95、NDCG@5 0.91を達成し、報告されたA/Bテストで初回CTRが6.2%と9.8%向上。',
+          '3つの中国語人手評価ドメインで、調整済み凸結合を上回るMRR@10を平均7.8%改善し、LLM適応融合より融合段階の遅延を80–100分の1に抑制。',
         status: '査読中',
         selected: true,
+        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',
@@ -224,7 +229,8 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         organization: 'H World Group（上海）',
         role: 'AIリサーチインターン',
         period: '2025年11月 – 2026年4月',
-        summary: '文脈適応型調達検索の研究開発と実運用に従事。',
+        summary:
+          'ProcuraClawと、ノイズの多い文字・音声・画像指示に対応するLFUSE検索層の研究開発に貢献。',
         logo: '/hworld-logo.ico',
       },
       {
@@ -267,11 +273,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: '面向大语言模型智能体的长程记忆治理',
-        venue: 'ICASSP 2027 · 审稿中',
+        venue: '审稿中',
         role: '第一作者',
       },
       {
-        title: '面向口语化中文采购查询的噪声鲁棒检索校准词汇融合',
+        title: 'LFUSE：面向噪声语音与图像指代商品搜索的学习式证据融合',
         venue: 'ICASSP 2027 · 审稿中',
         role: '共同一作',
       },
@@ -301,11 +307,12 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'procuraclaw',
         title: 'ProcuraClaw',
         summary:
-          '参与已部署采购搜索系统，采用 LLM 实体抽取、混合检索、画像感知排序与 Thompson Sampling。',
+          '参与已部署采购搜索系统及其 LFUSE 检索层，融合词法与稠密检索证据，处理噪声文本、语音和图像指代商品请求。',
         result:
-          '系统达到 MRR 0.95、NDCG@5 0.91；报告的 A/B 测试中首击 CTR 提高 6.2% 和 9.8%。',
+          '在三个中文人工评测域上，LFUSE 的 MRR@10 比调优后的凸组合平均提升 7.8%，融合阶段延迟比 LLM 自适应融合低 80–100 倍。',
         status: '审稿中',
         selected: true,
+        href: sharedProjects.links.procuraclaw,
       },
       {
         id: 'ceti',
@@ -338,7 +345,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         organization: '华住集团（上海）',
         role: 'AI 研究实习生',
         period: '2025 年 11 月 – 2026 年 4 月',
-        summary: '参与上下文感知采购搜索系统的研究与落地。',
+        summary: '参与 ProcuraClaw 及其面向噪声文本、语音和图像指代的 LFUSE 检索层研发。',
         logo: '/hworld-logo.ico',
       },
       {
