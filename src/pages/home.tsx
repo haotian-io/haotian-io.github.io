@@ -117,6 +117,16 @@ export function HomePage({ content }: { content: SiteContent }) {
               <h3>{project.title}</h3>
               <p>{project.summary}</p>
               <strong>{project.result}</strong>
+              {project.href && (
+                <a
+                  className="project-card-link"
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {content.labels.viewProject} →
+                </a>
+              )}
             </article>
           ))}
         </div>

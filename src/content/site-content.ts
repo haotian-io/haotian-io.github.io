@@ -19,20 +19,20 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         'Human–Computer Interaction',
       ],
       about:
-        'My research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction.',
+        'I study multimodal LLM agents and their use in software engineering and human–computer interaction.',
     },
     labels: {
       education: 'Education',
       publications: 'Publications',
       selectedProjects: 'Selected Projects',
-      experience: 'Industry Experience',
+      experience: 'Experience',
       allProjects: 'Projects',
       viewProject: 'View',
     },
     publications: [
       {
         title:
-          'PilotBench: A Benchmark for General Aviation Agents with Safety Constraints',
+          'PilotBench: A Benchmark for General Aviation Agents with Operational Constraints',
         venue: 'IJCNN 2026 · Accepted',
         role: 'Co-first author',
         href: sharedProjects.links.pilotbench,
@@ -45,7 +45,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         title:
           'LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search',
-        venue: 'ICASSP 2027 · Under review',
+        venue: 'Under review',
         role: 'Co-first author',
       },
     ],
@@ -54,12 +54,11 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'pilotbench',
         title: 'PilotBench',
         summary:
-          'Co-developed a safety-constrained benchmark from 708 real trajectories, 34-channel telemetry, and nine flight phases.',
+          'Co-developed a constraint-aware benchmark from 708 real trajectories, 34-channel telemetry, and nine flight phases.',
         result:
           'Contributed to evaluations of 41 models and analyses of precision–controllability and dynamic complexity.',
         status: 'Completed',
         href: sharedProjects.links.pilotbench,
-        selected: true,
       },
       {
         id: 'lhmg',
@@ -88,8 +87,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         summary:
           'Designed a pre-coding review workflow that turns repository evidence into atomic, source-linked task constraints (Records) for developers to inspect and revise before an agent codes.',
         result:
-          'In a 24-participant study across 72 cases, Records-2 showed the largest descriptive understanding gain: a 17.2-point adjusted contrast against FreeChat-2 (95% CI [−6.0, 40.5]). A separate handoff analysis covered 504 coding attempts across 10 tasks and 3 models.',
+          'Across 24 participants and 72 cases, Records-2 showed a 17.2-point adjusted contrast in descriptive understanding over FreeChat-2.',
         status: 'Ongoing',
+        selected: true,
       },
     ],
     education: {
@@ -138,19 +138,19 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         'ヒューマン・コンピュータ・インタラクション',
       ],
       about:
-        '研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクションです。',
+        'マルチモーダルLLMエージェントと、ソフトウェア工学・ヒューマンコンピュータインタラクションへの応用を研究しています。',
     },
     labels: {
       education: '学歴',
       publications: '論文',
       selectedProjects: '主要プロジェクト',
-      experience: '実務経験',
+      experience: '経験',
       allProjects: 'プロジェクト',
       viewProject: '詳細',
     },
     publications: [
       {
-        title: 'PilotBench: 安全制約を伴う一般航空エージェントのベンチマーク',
+        title: 'PilotBench: 運用制約を伴う一般航空エージェントのベンチマーク',
         venue: 'IJCNN 2026・採択',
         role: '共同筆頭著者',
         href: sharedProjects.links.pilotbench,
@@ -162,7 +162,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LFUSE：ノイズの多い音声・画像指示商品検索のための学習型証拠融合',
-        venue: 'ICASSP 2027・査読中',
+        venue: '査読中',
         role: '共同筆頭著者',
       },
     ],
@@ -171,11 +171,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'pilotbench',
         title: 'PilotBench',
         summary:
-          '708件の実飛行軌跡、34チャネルのテレメトリ、9飛行段階から安全制約付き評価基盤を共同開発。',
+          '708件の実飛行軌跡、34チャネルのテレメトリ、9飛行段階から運用制約付き評価基盤を共同開発。',
         result: '41モデルの評価と精度・制御性、動的複雑性の分析に貢献。',
         status: '完了',
         href: sharedProjects.links.pilotbench,
-        selected: true,
       },
       {
         id: 'lhmg',
@@ -206,6 +205,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '24名・72ケースの研究で、Records-2はFreeChat-2に対して調整済みで17.2ポイント高い記述的理解向上を示した（95% CI [−6.0, 40.5]）。別の引き継ぎ分析では、10タスク・3モデル・504回のコーディング試行を分析。',
         status: '進行中',
+        selected: true,
       },
     ],
     education: {
@@ -254,19 +254,19 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         '人机交互',
       ],
       about:
-        '我的研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互。',
+        '我研究多模态大语言模型智能体，以及其在软件工程与人机交互中的应用。',
     },
     labels: {
       education: '教育经历',
       publications: '论文',
       selectedProjects: '精选项目',
-      experience: '行业经历',
+      experience: '经历',
       allProjects: '项目',
       viewProject: '查看',
     },
     publications: [
       {
-        title: 'PilotBench：面向安全约束的通用航空智能体基准',
+        title: 'PilotBench：面向运行约束的通用航空智能体基准',
         venue: 'IJCNN 2026 · 已录用',
         role: '共同一作',
         href: sharedProjects.links.pilotbench,
@@ -278,7 +278,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'LFUSE：面向噪声语音与图像指代商品搜索的学习式证据融合',
-        venue: 'ICASSP 2027 · 审稿中',
+        venue: '审稿中',
         role: '共同一作',
       },
     ],
@@ -287,11 +287,10 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'pilotbench',
         title: 'PilotBench',
         summary:
-          '基于 708 条真实轨迹、34 通道遥测数据和 9 个飞行阶段共同开发安全约束评测基准。',
+          '基于 708 条真实轨迹、34 通道遥测数据和 9 个飞行阶段共同开发运行约束评测基准。',
         result: '参与 41 个模型的评测及精度—可控性与动态复杂度分析。',
         status: '已完成',
         href: sharedProjects.links.pilotbench,
-        selected: true,
       },
       {
         id: 'lhmg',
@@ -320,8 +319,9 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         summary:
           '设计面向代码生成前审查的工作流，将仓库证据组织为与源码片段绑定的原子任务约束（Records），供开发者在智能体编码前检查和修订。',
         result:
-          '24 名参与者、72 个案例的研究中，Records-2 的描述性理解提升最大：相对 FreeChat-2 的调整后差异为 17.2 个百分点（95% CI [−6.0, 40.5]）。另有 504 次编码尝试，覆盖 10 个任务和 3 个模型。',
+          '24 名参与者、72 个案例的研究中，Records-2 相对 FreeChat-2 的描述性理解调整后差异为 17.2 个百分点。',
         status: '进行中',
+        selected: true,
       },
     ],
     education: {

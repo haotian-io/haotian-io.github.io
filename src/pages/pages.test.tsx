@@ -45,16 +45,14 @@ describe('academic pages', () => {
     );
   });
 
-  it('shows both industry experience entries with concise details', () => {
+  it('shows both experience entries with concise details', () => {
     render(<HomePage content={SITE_CONTENT.en} />);
-    expect(
-      screen.getByRole('heading', { name: 'Industry Experience' }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Experience' })).toBeInTheDocument();
     expect(
       screen.queryByRole('heading', { name: 'Current Experience' }),
     ).not.toBeInTheDocument();
     expect(
-      screen.getByText('Worked on context-aware procurement search.'),
+      screen.getByText(/Contributed to ProcuraClaw and its LFUSE retrieval layer/),
     ).toBeInTheDocument();
     expect(screen.getByText('ZGC LAB, Beijing')).toBeInTheDocument();
     expect(
@@ -86,16 +84,16 @@ describe('academic pages', () => {
     );
   });
 
-  it('shows all five projects with accurate status wording', () => {
+  it('shows all four projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('project')).toHaveLength(5);
+    expect(screen.getAllByTestId('project')).toHaveLength(4);
     expect(screen.getByText('Completed')).toBeInTheDocument();
     expect(screen.getAllByText('Under review')).toHaveLength(2);
   });
 
   it('shows the current LHMG submission venue', () => {
     render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getByText('AAAI 2027 · Under review')).toBeInTheDocument();
+    expect(screen.getAllByText('Under review')).toHaveLength(4);
     expect(screen.queryByText(/EMNLP 2026/)).not.toBeInTheDocument();
   });
 
@@ -104,7 +102,10 @@ describe('academic pages', () => {
     const links = screen
       .getAllByRole('link')
       .map((link) => link.getAttribute('href'));
-    expect(links).toEqual(['https://arxiv.org/abs/2604.08987']);
+    expect(links).toEqual([
+      'https://arxiv.org/abs/2604.08987',
+      'https://github.com/haotian-io/ProcuraClaw',
+    ]);
 
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(screen.getByText(/Nov\. 2025 – Apr\. 2026/)).toBeInTheDocument();
@@ -120,26 +121,19 @@ describe('academic pages', () => {
     ).toBeInTheDocument();
   });
 
-  it('matches the corrected July 2026 CV wording', () => {
+  it('matches the current academic wording', () => {
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByText(/B\.Eng\. in Software Engineering/),
     ).toBeInTheDocument();
     rerender(<ProjectsPage content={SITE_CONTENT.en} />);
-    expect(
-      screen.getByText(
-        /20 LLMs on 2,379 clinical questions and 16 VLMs across six brain-imaging tasks/,
-      ),
-    ).toBeInTheDocument();
-    expect(screen.getByText(/Llama 3\.1 70B/)).toBeInTheDocument();
-    expect(
-      screen.getByText(/In controlled diagnostics, observed a 13\.3-point/),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/LFUSE retrieval layer/)).toBeInTheDocument();
+    expect(screen.getByText(/24 participants and 72 cases/)).toBeInTheDocument();
     expect(
       screen.getByText(/contributed to a deployed procurement-search system/i),
     ).toBeInTheDocument();
     expect(
-      screen.queryByText(/IntrA|TOF-MRA|weak-label strategies|LLaMA-3\.1-70B/),
+      screen.queryByText(/EMNLP 2026|AAAI 2027/),
     ).not.toBeInTheDocument();
   });
 
@@ -147,20 +141,20 @@ describe('academic pages', () => {
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByText(
-        /research interests include multimodal large language model agents, AI for software engineering, and human–computer interaction/i,
+        /I study multimodal LLM agents and their use in software engineering and human–computer interaction/i,
       ),
     ).toBeInTheDocument();
     expect(screen.queryByText('Multimodal LLM Agents')).not.toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
     expect(
       screen.getByText(
-        /研究兴趣包括多模态大语言模型智能体、人工智能赋能的软件工程，以及人机交互/,
+        /我研究多模态大语言模型智能体，以及其在软件工程与人机交互中的应用/,
       ),
     ).toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.ja} />);
     expect(
       screen.getByText(
-        /研究分野は、マルチモーダル大規模言語モデルエージェント、AIを活用したソフトウェア工学、ヒューマン・コンピュータ・インタラクション/,
+        /マルチモーダルLLMエージェントと、ソフトウェア工学・ヒューマンコンピュータインタラクションへの応用を研究しています/,
       ),
     ).toBeInTheDocument();
   });
