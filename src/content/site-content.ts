@@ -80,15 +80,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         selected: true,
       },
       {
-        id: 'ddrg',
-        title: 'DDRG',
-        summary:
-          'Prototyped an inference-time reasoning-graph pipeline that probes answer-sensitive claims and gates local repairs conservatively.',
-        result:
-          'Evaluated Llama 3.1 70B on multiple reasoning benchmarks; controlled diagnostics informed conservative selection gates.',
-        status: 'Ongoing',
-      },
-      {
         id: 'concordcoder',
         title: 'CETI',
         summary:
@@ -203,15 +194,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         selected: true,
       },
       {
-        id: 'ddrg',
-        title: 'DDRG',
-        summary:
-          '回答に影響する主張を検証し、局所修復を保守的に制御する推論時グラフパイプラインを試作。',
-        result:
-          'Llama 3.1 70Bを複数の推論ベンチマークで評価し、統制診断から保守的選択ゲートを設計。',
-        status: '進行中',
-      },
-      {
         id: 'concordcoder',
         title: 'CETI',
         summary:
@@ -324,14 +306,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '系统达到 MRR 0.95、NDCG@5 0.91；报告的 A/B 测试中首击 CTR 提高 6.2% 和 9.8%。',
         status: '审稿中',
         selected: true,
-      },
-      {
-        id: 'ddrg',
-        title: 'DDRG',
-        summary: '试制推理时图管线，探测答案敏感主张并对局部修复进行保守门控。',
-        result:
-          '使用 Llama 3.1 70B 在多个推理基准上评测；受控诊断用于收束保守选择门。',
-        status: '进行中',
       },
       {
         id: 'concordcoder',

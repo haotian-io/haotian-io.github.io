@@ -86,9 +86,9 @@ describe('academic pages', () => {
     );
   });
 
-  it('shows all six projects with accurate status wording', () => {
+  it('shows all five projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('project')).toHaveLength(6);
+    expect(screen.getAllByTestId('project')).toHaveLength(5);
     expect(screen.getByText('Completed')).toBeInTheDocument();
     expect(screen.getAllByText('Under review')).toHaveLength(2);
   });
