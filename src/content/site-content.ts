@@ -12,14 +12,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'Home', projects: 'Projects', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: 'Multimodal LLM Agents · AI for Software Engineering · Human–Computer Interaction',
+      role: 'Multimodal LLM Agents · AI for Software Engineering · NLP',
       interests: [
         'Multimodal LLM Agents',
         'AI for Software Engineering',
-        'Human–Computer Interaction',
+        'NLP',
       ],
       about:
-        'I study multimodal LLM agents and their use in software engineering and human–computer interaction.',
+        'I study multimodal LLM agents and their use in software engineering and NLP.',
     },
     labels: {
       education: 'Education',
@@ -122,7 +122,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         role: 'Research Intern',
         period: 'Aug. 2026 – Present',
         summary:
-          'Researching multimodal LLM agents for software engineering and human–computer interaction.',
+          'Researching multimodal LLM agents for software engineering and NLP.',
         logo: '/zgc-lab-logo.png',
       },
     ],
@@ -131,14 +131,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: 'ホーム', projects: 'プロジェクト', cv: 'CV' },
     identity: {
       name: 'Haotian Liu',
-      role: 'マルチモーダルLLMエージェント · AIを活用したソフトウェア工学 · ヒューマン・コンピュータ・インタラクション',
+      role: 'マルチモーダルLLMエージェント · AIを活用したソフトウェア工学 · 自然言語処理',
       interests: [
         'マルチモーダルLLMエージェント',
         'AIを活用したソフトウェア工学',
-        'ヒューマン・コンピュータ・インタラクション',
+        '自然言語処理',
       ],
       about:
-        'マルチモーダルLLMエージェントと、ソフトウェア工学・ヒューマンコンピュータインタラクションへの応用を研究しています。',
+        'マルチモーダルLLMエージェントと、ソフトウェア工学・自然言語処理への応用を研究しています。',
     },
     labels: {
       education: '学歴',
@@ -238,7 +238,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         role: 'リサーチインターン',
         period: '2026年8月 – 現在',
         summary:
-          'マルチモーダルLLMエージェントのソフトウェア工学・HCI応用を研究。',
+          'マルチモーダルLLMエージェントのソフトウェア工学・自然言語処理応用を研究。',
         logo: '/zgc-lab-logo.png',
       },
     ],
@@ -247,14 +247,14 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
     nav: { home: '主页', projects: '项目', cv: '简历' },
     identity: {
       name: '刘浩天',
-      role: '多模态大语言模型智能体 · 人工智能赋能的软件工程 · 人机交互',
+      role: '多模态大语言模型智能体 · 人工智能赋能的软件工程 · 自然语言处理',
       interests: [
         '多模态大语言模型智能体',
         '人工智能赋能的软件工程',
-        '人机交互',
+        '自然语言处理',
       ],
       about:
-        '我研究多模态大语言模型智能体，以及其在软件工程与人机交互中的应用。',
+        '我研究多模态大语言模型智能体，以及其在软件工程与自然语言处理中的应用。',
     },
     labels: {
       education: '教育经历',
@@ -352,7 +352,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         organization: 'ZGC LAB（北京）',
         role: '科研实习生',
         period: '2026 年 8 月 – 至今',
-        summary: '研究多模态大语言模型智能体在软件工程与人机交互中的应用。',
+        summary: '研究多模态大语言模型智能体在软件工程与自然语言处理中的应用。',
         logo: '/zgc-lab-logo.png',
       },
     ],

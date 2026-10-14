@@ -60,7 +60,7 @@ describe('academic pages', () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        'Researching multimodal LLM agents for software engineering and human–computer interaction.',
+        'Researching multimodal LLM agents for software engineering and NLP.',
       ),
     ).toBeInTheDocument();
     expect(screen.getByAltText('ZGC LAB logo')).toBeInTheDocument();
@@ -141,20 +141,20 @@ describe('academic pages', () => {
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(
       screen.getByText(
-        /I study multimodal LLM agents and their use in software engineering and human–computer interaction/i,
+        /I study multimodal LLM agents and their use in software engineering and NLP/i,
       ),
     ).toBeInTheDocument();
     expect(screen.queryByText('Multimodal LLM Agents')).not.toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.zh} />);
     expect(
       screen.getByText(
-        /我研究多模态大语言模型智能体，以及其在软件工程与人机交互中的应用/,
+        /我研究多模态大语言模型智能体，以及其在软件工程与自然语言处理中的应用/,
       ),
     ).toBeInTheDocument();
     rerender(<HomePage content={SITE_CONTENT.ja} />);
     expect(
       screen.getByText(
-        /マルチモーダルLLMエージェントと、ソフトウェア工学・ヒューマンコンピュータインタラクションへの応用を研究しています/,
+        /マルチモーダルLLMエージェントと、ソフトウェア工学・自然言語処理への応用を研究しています/,
       ),
     ).toBeInTheDocument();
   });
