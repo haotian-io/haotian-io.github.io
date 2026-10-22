@@ -70,7 +70,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ddrg',
         title: 'DDRG: Beyond Answer Voting',
         summary:
-          'Proposed a framework that aligns source-grounded claim graphs across sampled reasoning traces and sends localized conflicts to an answer-blind verifier, repairing only when the majority answer’s supporting path is refuted.',
+          'With the Matsuo–Iwasawa Lab at the University of Tokyo (Dr. Zihui (Irene) Li), proposed a framework that aligns source-grounded claim graphs across sampled reasoning traces and sends localized conflicts to an answer-blind verifier, repairing only when the majority answer’s supporting path is refuted.',
         result:
           'Across five benchmarks, improved macro-average accuracy over direct answering by 8.65 and 15.83 points for Qwen2.5-7B and Llama3.1-8B, exceeding CoT, GoT, GoV, and self-consistency.',
         status: 'Under review',
@@ -217,7 +217,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ddrg',
         title: 'DDRG：Beyond Answer Voting',
         summary:
-          'サンプルした推論過程から根拠付きクレームグラフを構築・整合し、局所的な不一致を回答非依存の検証器に送り、多数派回答の根拠経路が反証された場合のみ修正するフレームワークを提案。',
+          '東京大学 松尾・岩澤研究室のDr. Zihui (Irene) Liと共同で、サンプルした推論過程から根拠付きクレームグラフを構築・整合し、局所的な不一致を回答非依存の検証器に送り、多数派回答の根拠経路が反証された場合のみ修正するフレームワークを提案。',
         result:
           '5つのベンチマークで、直接回答比のマクロ平均精度をQwen2.5-7Bで8.65ポイント、Llama3.1-8Bで15.83ポイント改善し、CoT・GoT・GoV・自己整合性を上回った。',
         status: '原稿準備中',
@@ -363,7 +363,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ddrg',
         title: 'DDRG：Beyond Answer Voting',
         summary:
-          '提出一种框架：在多条采样推理轨迹之间对齐有来源依据的论断图，将局部冲突交给不看答案的验证器，仅当多数答案的支撑路径被反驳时才进行一次定向修复。',
+          '与东京大学松尾·岩泽研究室 Zihui (Irene) Li 博士合作，提出一种框架：在多条采样推理轨迹之间对齐有来源依据的论断图，将局部冲突交给不看答案的验证器，仅当多数答案的支撑路径被反驳时才进行一次定向修复。',
         result:
           '在五个基准上，相比直接回答，Qwen2.5-7B 与 Llama3.1-8B 的宏平均准确率分别提升 8.65 和 15.83 个百分点，优于 CoT、GoT、GoV 与自洽投票。',
         status: '撰写中',
