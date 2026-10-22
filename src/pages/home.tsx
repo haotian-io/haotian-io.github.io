@@ -77,7 +77,7 @@ export function HomePage({ content }: { content: SiteContent }) {
       <section className="section" aria-labelledby="publications-title">
         <h2 id="publications-title">{content.labels.publications}</h2>
         <div className="rows">
-          {content.publications.slice(0, 3).map((publication) => (
+          {content.publications.map((publication) => (
             <article
               className="publication-row"
               data-testid="publication"

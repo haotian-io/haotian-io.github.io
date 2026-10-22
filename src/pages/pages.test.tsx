@@ -7,7 +7,7 @@ import { ProjectsPage } from './projects';
 describe('academic pages', () => {
   it('keeps the English homepage compact', () => {
     const { container } = render(<HomePage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('publication')).toHaveLength(2);
+    expect(screen.getAllByTestId('publication')).toHaveLength(5);
     expect(screen.getAllByTestId('selected-project')).toHaveLength(3);
     expect(container.querySelector('.hero-role')).not.toBeInTheDocument();
     expect(container.querySelector('.interest-list')).not.toBeInTheDocument();
@@ -84,11 +84,12 @@ describe('academic pages', () => {
     );
   });
 
-  it('shows all five projects with accurate status wording', () => {
+  it('shows all six projects with accurate status wording', () => {
     render(<ProjectsPage content={SITE_CONTENT.en} />);
-    expect(screen.getAllByTestId('project')).toHaveLength(5);
+    expect(screen.getAllByTestId('project')).toHaveLength(6);
     expect(screen.getAllByText('Completed')).toHaveLength(2);
-    expect(screen.getAllByText('Under review')).toHaveLength(2);
+    expect(screen.getAllByText('Under review')).toHaveLength(3);
+    expect(screen.getAllByText('Manuscript')).toHaveLength(1);
   });
 
   it('links only to public project materials and uses consistent experience details', () => {
@@ -96,7 +97,10 @@ describe('academic pages', () => {
     const links = screen
       .getAllByRole('link')
       .map((link) => link.getAttribute('href'));
-    expect(links).toEqual(['https://arxiv.org/abs/2604.08987']);
+    expect(links).toEqual([
+      'https://arxiv.org/abs/2610.18606',
+      'https://arxiv.org/abs/2604.08987',
+    ]);
 
     const { rerender } = render(<HomePage content={SITE_CONTENT.en} />);
     expect(screen.getByText(/Nov\. 2025 – Apr\. 2026/)).toBeInTheDocument();

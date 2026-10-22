@@ -35,13 +35,13 @@ const CONFIG = {
         {
           title: 'LHMG: Long-Horizon Memory Governance for LLM Agents',
           description:
-            'First-authored framework that augments LLM agents with conflict-aware revision graphs, No-Silent-Overwrite semantics, and Risk-Gated Memory Conditioning to prevent silent state corruption in long-range reasoning. Observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory. Under review at ICASSP 2027 after reviews at ICML.',
+            'First-authored framework that augments LLM agents with conflict-aware revision graphs, No-Silent-Overwrite semantics, and Risk-Gated Memory Conditioning to prevent silent state corruption in long-range reasoning. Observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory. Manuscript in preparation.',
           link: 'https://github.com/haotian-io/Long-Horizon-Memory-Governance-for-LLM-Agents',
         },
         {
           title: 'CETI: Evidence-Constrained Collaborative Task Interpretation',
           description:
-            `First-authored system (with ZGC Lab/PKU and Waseda University) that intercepts the cognitive gap–intent gap in repository-level AI coding. CETI generates atomic task-constraint Records bound to repository evidence, letting developers inspect and revise an agent's interpretation before a patch is generated. Includes a three-condition human study over ten FEA-Bench cases.`,
+            `First-authored system (with ZGC Lab) that intercepts the cognitive gap–intent gap in repository-level AI coding. CETI generates atomic task-constraint Records bound to repository evidence, letting developers inspect and revise an agent's interpretation before a patch is generated. Includes a three-condition human study over ten FEA-Bench cases.`,
           link: 'https://github.com/haotian-io',
         },
         {
