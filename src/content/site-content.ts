@@ -4,7 +4,6 @@ const sharedProjects = {
   links: {
     pilotbench: 'https://arxiv.org/abs/2604.08987',
     flyeval: 'https://arxiv.org/abs/2609.04021',
-    ddrg: 'https://arxiv.org/abs/2610.18606',
   },
 };
 
@@ -47,13 +46,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title:
-          'Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through Graph Alignment across Sampled Traces',
-        venue: 'ARR · Under review',
-        role: 'First author',
-        href: sharedProjects.links.ddrg,
-      },
-      {
-        title:
           'LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search',
         venue: 'ICASSP 2027 · Under review',
         role: 'First author',
@@ -66,17 +58,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
     ],
     projects: [
-      {
-        id: 'ddrg',
-        title: 'DDRG: Beyond Answer Voting',
-        summary:
-          'Proposed a framework that aligns source-grounded claim graphs across sampled reasoning traces and sends localized conflicts to an answer-blind verifier, repairing only when the majority answer’s supporting path is refuted.',
-        result:
-          'Across five benchmarks, improved macro-average accuracy over direct answering by 8.65 and 15.83 points for Qwen2.5-7B and Llama3.1-8B, exceeding CoT, GoT, GoV, and self-consistency.',
-        status: 'Under review',
-        href: sharedProjects.links.ddrg,
-        selected: true,
-      },
       {
         id: 'pilotbench',
         title: 'PilotBench',
@@ -95,6 +76,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           'In controlled diagnostics, observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.',
         status: 'Manuscript',
+        selected: true,
       },
       {
         id: 'procuraclaw',
@@ -110,7 +92,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ceti',
         title: 'CETI: Before the Agent Acts',
         summary:
-          'Designed a pre-coding review workflow that turns repository evidence into atomic, source-linked task constraints (Records) for developers to inspect and revise before an agent codes.',
+          'Under the supervision of Jialong Li, designed a pre-coding review workflow that turns repository evidence into atomic, source-linked task constraints (Records) for developers to inspect and revise before an agent codes.',
         result:
           'Across 24 participants and 72 cases, Records-2 showed a 17.2-point adjusted contrast in descriptive understanding over FreeChat-2; the study traced 504 coding attempts across 10 tasks and 3 models.',
         status: 'Under review',
@@ -196,12 +178,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         href: sharedProjects.links.flyeval,
       },
       {
-        title: 'Beyond Answer Voting：サンプル推論過程間のグラフ整合によるLLM推論の細粒度修正',
-        venue: 'ARR・査読中',
-        role: '筆頭著者',
-        href: sharedProjects.links.ddrg,
-      },
-      {
         title: 'LFUSE：ノイズの多い音声・画像指示商品検索のための学習型証拠融合',
         venue: 'ICASSP 2027・査読中',
         role: '筆頭著者',
@@ -213,17 +189,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
     ],
     projects: [
-      {
-        id: 'ddrg',
-        title: 'DDRG：Beyond Answer Voting',
-        summary:
-          'サンプルした推論過程から根拠付きクレームグラフを構築・整合し、局所的な不一致を回答非依存の検証器に送り、多数派回答の根拠経路が反証された場合のみ修正するフレームワークを提案。',
-        result:
-          '5つのベンチマークで、直接回答比のマクロ平均精度をQwen2.5-7Bで8.65ポイント、Llama3.1-8Bで15.83ポイント改善し、CoT・GoT・GoV・自己整合性を上回った。',
-        status: '原稿準備中',
-        href: sharedProjects.links.ddrg,
-        selected: true,
-      },
       {
         id: 'pilotbench',
         title: 'PilotBench',
@@ -241,6 +206,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '統制診断で、フラットメモリ比でGPT-4oのターン間意思決定整合性が13.3ポイント向上。',
         status: '査読中',
+        selected: true,
       },
       {
         id: 'procuraclaw',
@@ -256,7 +222,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ceti',
         title: 'CETI：Before the Agent Acts',
         summary:
-          'リポジトリの証拠を原子単位のタスク制約（Records）に変換し、コーディング前に開発者が検査・修正できるレビュー方式を設計。',
+          'Jialong Li氏の指導の下、リポジトリの証拠を原子単位のタスク制約（Records）に変換し、コーディング前に開発者が検査・修正できるレビュー方式を設計。',
         result:
           '24名・72ケースの研究で、Records-2はFreeChat-2に対して17.2ポイント高い記述的理解の調整済み差異を示した。10タスク・3モデル・504回のコーディング試行も追跡。',
         status: '査読中',
@@ -342,12 +308,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         href: sharedProjects.links.flyeval,
       },
       {
-        title: 'Beyond Answer Voting：基于采样推理轨迹图对齐的 LLM 推理细粒度纠错',
-        venue: 'ARR · 审稿中',
-        role: '第一作者',
-        href: sharedProjects.links.ddrg,
-      },
-      {
         title: 'LFUSE：面向噪声语音与图像指代商品搜索的学习式证据融合',
         venue: 'ICASSP 2027 · 审稿中',
         role: '第一作者',
@@ -359,17 +319,6 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
     ],
     projects: [
-      {
-        id: 'ddrg',
-        title: 'DDRG：Beyond Answer Voting',
-        summary:
-          '提出一种框架：在多条采样推理轨迹之间对齐有来源依据的论断图，将局部冲突交给不看答案的验证器，仅当多数答案的支撑路径被反驳时才进行一次定向修复。',
-        result:
-          '在五个基准上，相比直接回答，Qwen2.5-7B 与 Llama3.1-8B 的宏平均准确率分别提升 8.65 和 15.83 个百分点，优于 CoT、GoT、GoV 与自洽投票。',
-        status: '撰写中',
-        href: sharedProjects.links.ddrg,
-        selected: true,
-      },
       {
         id: 'pilotbench',
         title: 'PilotBench',
@@ -387,6 +336,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         result:
           '在受控诊断中，相比平面记忆，GPT-4o 的跨轮决策一致性提高 13.3 个百分点。',
         status: '审稿中',
+        selected: true,
       },
       {
         id: 'procuraclaw',
@@ -402,7 +352,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
         id: 'ceti',
         title: 'CETI：Before the Agent Acts',
         summary:
-          '设计面向代码生成前审查的工作流，将仓库证据组织为与源码片段绑定的原子任务约束（Records），供开发者在智能体编码前检查和修订。',
+          '在 Jialong Li 老师指导下，设计面向代码生成前审查的工作流，将仓库证据组织为与源码片段绑定的原子任务约束（Records），供开发者在智能体编码前检查和修订。',
         result:
           '24 名参与者、72 个案例的研究中，Records-2 相对 FreeChat-2 的描述性理解调整后差异为 17.2 个百分点；另追踪了覆盖 10 个任务和 3 个模型的 504 次编码尝试。',
         status: '审稿中',
