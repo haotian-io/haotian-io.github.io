@@ -205,7 +205,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '追記型改訂、状態管理、リスクゲート、管理された忘却を備える記憶ガバナンス層のプロトタイプを開発。',
         result:
           '統制診断で、フラットメモリ比でGPT-4oのターン間意思決定整合性が13.3ポイント向上。',
-        status: '査読中',
+        status: '投稿準備中',
         selected: true,
       },
       {
@@ -335,7 +335,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '开发包含追加式修订、活跃状态语义、风险门控与受控遗忘的记忆治理原型。',
         result:
           '在受控诊断中，相比平面记忆，GPT-4o 的跨轮决策一致性提高 13.3 个百分点。',
-        status: '审稿中',
+        status: '投稿准备中',
         selected: true,
       },
       {
