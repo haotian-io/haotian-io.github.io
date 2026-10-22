@@ -17,6 +17,8 @@ concurrency:
 
 jobs:
   build:
+    # Deploy only from master, even when the workflow is dispatched manually.
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
