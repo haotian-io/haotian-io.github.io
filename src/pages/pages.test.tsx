@@ -90,6 +90,18 @@ describe('academic pages', () => {
     expect(screen.getAllByText('Completed')).toHaveLength(2);
     expect(screen.getAllByText('Under review')).toHaveLength(3);
     expect(screen.getAllByText('Manuscript')).toHaveLength(1);
+
+    const status = (locale: 'en' | 'ja' | 'zh', id: string) =>
+      SITE_CONTENT[locale].projects.find((project) => project.id === id)
+        ?.status;
+    expect([status('ja', 'ddrg'), status('ja', 'lhmg')]).toEqual([
+      '査読中',
+      '投稿準備中',
+    ]);
+    expect([status('zh', 'ddrg'), status('zh', 'lhmg')]).toEqual([
+      '审稿中',
+      '投稿准备中',
+    ]);
   });
 
   it('links only to public project materials and uses consistent experience details', () => {

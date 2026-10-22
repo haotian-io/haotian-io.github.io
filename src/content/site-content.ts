@@ -220,7 +220,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '東京大学 松尾・岩澤研究室のDr. Zihui (Irene) Liと共同で、サンプルした推論過程から根拠付きクレームグラフを構築・整合し、局所的な不一致を回答非依存の検証器に送り、多数派回答の根拠経路が反証された場合のみ修正するフレームワークを提案。',
         result:
           '5つのベンチマークで、直接回答比のマクロ平均精度をQwen2.5-7Bで8.65ポイント、Llama3.1-8Bで15.83ポイント改善し、CoT・GoT・GoV・自己整合性を上回った。',
-        status: '原稿準備中',
+        status: '査読中',
         href: sharedProjects.links.ddrg,
         selected: true,
       },
@@ -240,7 +240,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '追記型改訂、状態管理、リスクゲート、管理された忘却を備える記憶ガバナンス層のプロトタイプを開発。',
         result:
           '統制診断で、フラットメモリ比でGPT-4oのターン間意思決定整合性が13.3ポイント向上。',
-        status: '査読中',
+        status: '投稿準備中',
       },
       {
         id: 'procuraclaw',
@@ -366,7 +366,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '与东京大学松尾·岩泽研究室 Zihui (Irene) Li 博士合作，提出一种框架：在多条采样推理轨迹之间对齐有来源依据的论断图，将局部冲突交给不看答案的验证器，仅当多数答案的支撑路径被反驳时才进行一次定向修复。',
         result:
           '在五个基准上，相比直接回答，Qwen2.5-7B 与 Llama3.1-8B 的宏平均准确率分别提升 8.65 和 15.83 个百分点，优于 CoT、GoT、GoV 与自洽投票。',
-        status: '撰写中',
+        status: '审稿中',
         href: sharedProjects.links.ddrg,
         selected: true,
       },
@@ -386,7 +386,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
           '开发包含追加式修订、活跃状态语义、风险门控与受控遗忘的记忆治理原型。',
         result:
           '在受控诊断中，相比平面记忆，GPT-4o 的跨轮决策一致性提高 13.3 个百分点。',
-        status: '审稿中',
+        status: '投稿准备中',
       },
       {
         id: 'procuraclaw',
