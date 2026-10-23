@@ -40,7 +40,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       {
         title:
           'FLY-EVAL++: An Evidence-Driven Evaluation Protocol for Flight Prediction with Large Language Models',
-        venue: 'CoLM 2026 · Accepted',
+        venue: 'COLM 2026 · Accepted',
         role: 'Co-author',
         href: sharedProjects.links.flyeval,
       },
@@ -173,7 +173,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'FLY-EVAL++：LLMによる飛行予測のための証拠駆動型評価プロトコル',
-        venue: 'CoLM 2026・採択',
+        venue: 'COLM 2026・採択',
         role: '共著者',
         href: sharedProjects.links.flyeval,
       },
@@ -303,7 +303,7 @@ export const SITE_CONTENT: Record<Locale, SiteContent> = {
       },
       {
         title: 'FLY-EVAL++：面向大语言模型飞行预测的证据驱动评测协议',
-        venue: 'CoLM 2026 · 已录用',
+        venue: 'COLM 2026 · 已录用',
         role: '合作者',
         href: sharedProjects.links.flyeval,
       },
